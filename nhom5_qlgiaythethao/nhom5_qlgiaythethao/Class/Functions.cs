@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Globalization;
+
 
 namespace nhom5_qlgiaythethao.Class
 {
@@ -17,7 +19,7 @@ namespace nhom5_qlgiaythethao.Class
         public static void Connect()
         {
             //Thiết lập giá trị cho chuỗi kết nối
-            connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Nhom09_Ca01_QuanLyCuaHangBanDoDa\61.CuaHangDoDa\61.CuaHangDoDa\61.CuaHangDoDa\Database\Database_61.mdf;Integrated Security=True;Connect Timeout=30";
+            connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\Database\Quanlygiaythethao.mdf;Integrated Security=True;Connect Timeout=30";
             //connString = "";
             Conn = new SqlConnection();                 //Cấp phát đối tượng
             Conn.ConnectionString = connString;         //Kết nối
@@ -104,21 +106,26 @@ namespace nhom5_qlgiaythethao.Class
             cmd = null;
         }
 
-        public static bool IsDate(string d)
-        {
-            string[] parts = d.Split('/');
-            if ((Convert.ToInt32(parts[0]) >= 1) && (Convert.ToInt32(parts[0]) <= 31) && (Convert.ToInt32(parts[1]) >= 1) && (Convert.ToInt32(parts[1]) <= 12) && (Convert.ToInt32(parts[2]) >= 1900))
-                return true;
-            else
-                return false;
-        }
+        /* public static bool IsDate(string d)
+         {
+             string[] parts = d.Split('/');
+             if ((Convert.ToInt32(parts[0]) >= 1) && (Convert.ToInt32(parts[0]) <= 31) && (Convert.ToInt32(parts[1]) >= 1) && (Convert.ToInt32(parts[1]) <= 12) && (Convert.ToInt32(parts[2]) >= 1900))
+                 return true;
+             else
+                 return false;
+         }
 
-        public static string ConvertDateTime(string d)
+         public static string ConvertDateTime(string d)
+         {
+             string[] parts = d.Split('/');
+             string dt = String.Format("{0}/{1}/{2}", parts[1], parts[0], parts[2]);
+             return dt;
+         }*/
+        public static DateTime ConvertDateTime(string d)
         {
-            string[] parts = d.Split('/');
-            string dt = String.Format("{0}/{1}/{2}", parts[1], parts[0], parts[2]);
+            DateTime dt = DateTime.ParseExact(d, "dd/mm/yyyy", CultureInfo.InvariantCulture);
             return dt;
-        }
+        }    
 
         public static void FillCombo(string sql, ComboBox cbo, string ma, string ten)
         {
