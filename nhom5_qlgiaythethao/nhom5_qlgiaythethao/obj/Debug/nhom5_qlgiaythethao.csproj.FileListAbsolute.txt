@@ -1,0 +1,12 @@
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\bin\Debug\nhom5_qlgiaythethao.exe.config
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\bin\Debug\nhom5_qlgiaythethao.exe
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\bin\Debug\nhom5_qlgiaythethao.pdb
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.csproj.AssemblyReference.cache
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.csproj.SuggestedBindingRedirects.cache
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.Forms.FrmLogin.resources
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.FrmMenu.resources
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.Properties.Resources.resources
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.csproj.GenerateResource.cache
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.csproj.CoreCompileInputs.cache
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.exe
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.pdb
