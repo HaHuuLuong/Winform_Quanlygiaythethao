@@ -133,7 +133,7 @@
             this.mnuNhanvien.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuque});
             this.mnuNhanvien.Name = "mnuNhanvien";
-            this.mnuNhanvien.Size = new System.Drawing.Size(270, 34);
+            this.mnuNhanvien.Size = new System.Drawing.Size(223, 34);
             this.mnuNhanvien.Text = "Nhân viên";
             // 
             // mnuque
@@ -145,13 +145,13 @@
             // mnuKhachhang
             // 
             this.mnuKhachhang.Name = "mnuKhachhang";
-            this.mnuKhachhang.Size = new System.Drawing.Size(270, 34);
+            this.mnuKhachhang.Size = new System.Drawing.Size(223, 34);
             this.mnuKhachhang.Text = "Khách hàng";
             // 
             // mnuNhacungcap
             // 
             this.mnuNhacungcap.Name = "mnuNhacungcap";
-            this.mnuNhacungcap.Size = new System.Drawing.Size(270, 34);
+            this.mnuNhacungcap.Size = new System.Drawing.Size(223, 34);
             this.mnuNhacungcap.Text = "Nhà cung cấp";
             // 
             // toolStripMenuItem2
@@ -166,14 +166,14 @@
             // mnuHoadonban
             // 
             this.mnuHoadonban.Name = "mnuHoadonban";
-            this.mnuHoadonban.Size = new System.Drawing.Size(270, 34);
+            this.mnuHoadonban.Size = new System.Drawing.Size(229, 34);
             this.mnuHoadonban.Text = "Hoá đơn bán";
             this.mnuHoadonban.Click += new System.EventHandler(this.mnuHoadonban_Click);
             // 
             // mnuHoadonnhap
             // 
             this.mnuHoadonnhap.Name = "mnuHoadonnhap";
-            this.mnuHoadonnhap.Size = new System.Drawing.Size(270, 34);
+            this.mnuHoadonnhap.Size = new System.Drawing.Size(229, 34);
             this.mnuHoadonnhap.Text = "Hoá đơn nhập";
             // 
             // mnuTimkiem
@@ -211,26 +211,27 @@
             // mnuBCSanpham
             // 
             this.mnuBCSanpham.Name = "mnuBCSanpham";
-            this.mnuBCSanpham.Size = new System.Drawing.Size(229, 34);
+            this.mnuBCSanpham.Size = new System.Drawing.Size(270, 34);
             this.mnuBCSanpham.Text = "Sản phẩm";
             // 
             // mnuBCHoadonnhap
             // 
             this.mnuBCHoadonnhap.Name = "mnuBCHoadonnhap";
-            this.mnuBCHoadonnhap.Size = new System.Drawing.Size(229, 34);
+            this.mnuBCHoadonnhap.Size = new System.Drawing.Size(270, 34);
             this.mnuBCHoadonnhap.Text = "Hoá đơn nhập";
             // 
             // mnuBCDoanhthu
             // 
             this.mnuBCDoanhthu.Name = "mnuBCDoanhthu";
-            this.mnuBCDoanhthu.Size = new System.Drawing.Size(229, 34);
+            this.mnuBCDoanhthu.Size = new System.Drawing.Size(270, 34);
             this.mnuBCDoanhthu.Text = "Doanh thu";
             // 
             // mnuBCHoadonban
             // 
             this.mnuBCHoadonban.Name = "mnuBCHoadonban";
-            this.mnuBCHoadonban.Size = new System.Drawing.Size(229, 34);
+            this.mnuBCHoadonban.Size = new System.Drawing.Size(270, 34);
             this.mnuBCHoadonban.Text = "Hoá đơn bán";
+            this.mnuBCHoadonban.Click += new System.EventHandler(this.mnuBCHoadonban_Click);
             // 
             // mnuThoat
             // 

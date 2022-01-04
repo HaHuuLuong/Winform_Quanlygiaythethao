@@ -56,5 +56,13 @@ namespace nhom5_qlgiaythethao
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }
+
+        private void mnuBCHoadonban_Click(object sender, EventArgs e)
+        {
+            Forms.FrmBaoCaoHoaDonBan f = new Forms.FrmBaoCaoHoaDonBan();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+
+        }
     }
 }

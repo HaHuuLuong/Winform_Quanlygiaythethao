@@ -103,7 +103,7 @@
             this.groupSp.Controls.Add(this.label10);
             this.groupSp.Controls.Add(this.label9);
             this.groupSp.Controls.Add(this.label8);
-            this.groupSp.Location = new System.Drawing.Point(59, 221);
+            this.groupSp.Location = new System.Drawing.Point(66, 182);
             this.groupSp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupSp.Name = "groupSp";
             this.groupSp.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -117,7 +117,7 @@
             // 
             this.btntimkiem.Image = global::nhom5_qlgiaythethao.Properties.Resources.Icojam_Blue_Bits_Application_search;
             this.btntimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btntimkiem.Location = new System.Drawing.Point(696, 488);
+            this.btntimkiem.Location = new System.Drawing.Point(712, 452);
             this.btntimkiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btntimkiem.Name = "btntimkiem";
             this.btntimkiem.Size = new System.Drawing.Size(151, 50);
@@ -130,7 +130,7 @@
             // cbomahoadonban
             // 
             this.cbomahoadonban.FormattingEnabled = true;
-            this.cbomahoadonban.Location = new System.Drawing.Point(469, 499);
+            this.cbomahoadonban.Location = new System.Drawing.Point(469, 464);
             this.cbomahoadonban.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbomahoadonban.Name = "cbomahoadonban";
             this.cbomahoadonban.Size = new System.Drawing.Size(199, 28);
@@ -142,7 +142,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(262, 499);
+            this.label17.Location = new System.Drawing.Point(268, 467);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(182, 25);
             this.label17.TabIndex = 30;
@@ -152,7 +152,7 @@
             // 
             this.btnboqua.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Pretty_Office_8_Skip_forward;
             this.btnboqua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnboqua.Location = new System.Drawing.Point(644, 402);
+            this.btnboqua.Location = new System.Drawing.Point(643, 393);
             this.btnboqua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnboqua.Name = "btnboqua";
             this.btnboqua.Size = new System.Drawing.Size(149, 51);
@@ -166,7 +166,7 @@
             // 
             this.btnsua.Image = global::nhom5_qlgiaythethao.Properties.Resources.Bokehlicia_Captiva_Edit_tomboy;
             this.btnsua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsua.Location = new System.Drawing.Point(478, 402);
+            this.btnsua.Location = new System.Drawing.Point(478, 393);
             this.btnsua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(97, 51);
@@ -180,7 +180,7 @@
             // 
             this.btndong.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Flatastic_9_Login;
             this.btndong.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btndong.Location = new System.Drawing.Point(1018, 404);
+            this.btndong.Location = new System.Drawing.Point(1022, 393);
             this.btndong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btndong.Name = "btndong";
             this.btndong.Size = new System.Drawing.Size(122, 49);
@@ -195,7 +195,7 @@
             this.btnhuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhuy.Image = global::nhom5_qlgiaythethao.Properties.Resources.Hopstarter_Soft_Scraps_File_Delete;
             this.btnhuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnhuy.Location = new System.Drawing.Point(833, 402);
+            this.btnhuy.Location = new System.Drawing.Point(833, 393);
             this.btnhuy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnhuy.Name = "btnhuy";
             this.btnhuy.Size = new System.Drawing.Size(159, 51);
@@ -209,7 +209,7 @@
             // 
             this.btnluu.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Pretty_Office_7_Save;
             this.btnluu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnluu.Location = new System.Drawing.Point(324, 402);
+            this.btnluu.Location = new System.Drawing.Point(324, 393);
             this.btnluu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnluu.Name = "btnluu";
             this.btnluu.Size = new System.Drawing.Size(96, 51);
@@ -223,7 +223,7 @@
             // 
             this.btnthemmoi.Image = global::nhom5_qlgiaythethao.Properties.Resources.Hopstarter_Soft_Scraps_Folder_Add1;
             this.btnthemmoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnthemmoi.Location = new System.Drawing.Point(88, 402);
+            this.btnthemmoi.Location = new System.Drawing.Point(88, 393);
             this.btnthemmoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnthemmoi.Name = "btnthemmoi";
             this.btnthemmoi.Size = new System.Drawing.Size(171, 51);
@@ -407,7 +407,7 @@
             this.groupThongtinchung.Controls.Add(this.label3);
             this.groupThongtinchung.Controls.Add(this.label2);
             this.groupThongtinchung.ForeColor = System.Drawing.Color.Black;
-            this.groupThongtinchung.Location = new System.Drawing.Point(59, 68);
+            this.groupThongtinchung.Location = new System.Drawing.Point(72, 44);
             this.groupThongtinchung.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupThongtinchung.Name = "groupThongtinchung";
             this.groupThongtinchung.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -528,7 +528,7 @@
             this.label1.BackColor = System.Drawing.Color.Lavender;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(437, 9);
+            this.label1.Location = new System.Drawing.Point(428, -11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(373, 55);
             this.label1.TabIndex = 3;
