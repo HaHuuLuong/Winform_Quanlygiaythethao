@@ -42,18 +42,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Linen;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(333, 100);
+            this.label1.Location = new System.Drawing.Point(419, 138);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 32);
+            this.label1.Size = new System.Drawing.Size(184, 41);
             this.label1.TabIndex = 14;
             this.label1.Text = "Đăng nhập";
             // 
             // btnlogin
             // 
             this.btnlogin.BackColor = System.Drawing.Color.Lime;
-            this.btnlogin.Location = new System.Drawing.Point(297, 308);
+            this.btnlogin.Location = new System.Drawing.Point(361, 346);
             this.btnlogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(94, 42);
@@ -65,7 +65,7 @@
             // btncancel
             // 
             this.btncancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btncancel.Location = new System.Drawing.Point(423, 308);
+            this.btncancel.Location = new System.Drawing.Point(487, 346);
             this.btncancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(84, 42);
@@ -76,7 +76,7 @@
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(405, 238);
+            this.txtMatKhau.Location = new System.Drawing.Point(469, 276);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
@@ -87,9 +87,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.label2.BackColor = System.Drawing.Color.DodgerBlue;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(256, 172);
+            this.label2.Location = new System.Drawing.Point(320, 210);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 29);
             this.label2.TabIndex = 8;
@@ -97,7 +97,7 @@
             // 
             // txtTenDangNhap
             // 
-            this.txtTenDangNhap.Location = new System.Drawing.Point(405, 176);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(469, 214);
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(134, 26);
@@ -106,9 +106,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.label3.BackColor = System.Drawing.Color.DodgerBlue;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(262, 238);
+            this.label3.Location = new System.Drawing.Point(326, 276);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 29);
             this.label3.TabIndex = 9;
@@ -117,19 +117,20 @@
             // chkLuuMatKhau
             // 
             this.chkLuuMatKhau.AutoSize = true;
-            this.chkLuuMatKhau.Location = new System.Drawing.Point(600, 242);
+            this.chkLuuMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.chkLuuMatKhau.Location = new System.Drawing.Point(664, 280);
             this.chkLuuMatKhau.Name = "chkLuuMatKhau";
             this.chkLuuMatKhau.Size = new System.Drawing.Size(71, 24);
             this.chkLuuMatKhau.TabIndex = 15;
             this.chkLuuMatKhau.Text = "Save";
-            this.chkLuuMatKhau.UseVisualStyleBackColor = true;
+            this.chkLuuMatKhau.UseVisualStyleBackColor = false;
             this.chkLuuMatKhau.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 569);
+            this.ClientSize = new System.Drawing.Size(1114, 669);
             this.Controls.Add(this.chkLuuMatKhau);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnlogin);

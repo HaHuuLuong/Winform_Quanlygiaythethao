@@ -10,3 +10,4 @@ D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\n
 D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.csproj.CoreCompileInputs.cache
 D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.exe
 D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.pdb
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.Forms.FrmHoaDonBan.resources

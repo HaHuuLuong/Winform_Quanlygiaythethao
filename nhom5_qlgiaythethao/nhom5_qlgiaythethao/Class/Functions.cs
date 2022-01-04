@@ -36,26 +36,14 @@ namespace nhom5_qlgiaythethao.Class
                 Conn = null;
             }
         }
-        //cach1
         public static DataTable GetDataToTable(string sql)
         {
-            SqlDataAdapter Mydata = new SqlDataAdapter();	// Khai báo
-            // Tạo đối tượng Command thực hiện câu lệnh SELECT        
-            Mydata.SelectCommand = new SqlCommand();
-            Mydata.SelectCommand.Connection = Functions.Conn; 	// Kết nối CSDL
-            Mydata.SelectCommand.CommandText = sql;	// Gán câu lệnh SELECT
-            DataTable table = new DataTable();    // Khai báo DataTable nhận dữ liệu trả về
-            Mydata.Fill(table); 	//Thực hiện câu lệnh SELECT và đổ dữ liệu vào bảng table
+            SqlDataAdapter Mydata = new SqlDataAdapter(sql, Functions.Conn);
+            DataTable table = new DataTable();
+            Mydata.Fill(table);
             return table;
         }
-        //cach2
-        //public static DataTable GetDataToTable(string sql)
-        //{
-        //    SqlDataAdapter Mydata = new SqlDataAdapter(sql, functions.Conn);
-        //    DataTable table = new DataTable();
-        //    Mydata.Fill(table);
-        //    return table;
-        //}
+
 
         //CheckKey có tác dụng kiểm tra khóa trùng,
         public static bool CheckKey(string sql)
