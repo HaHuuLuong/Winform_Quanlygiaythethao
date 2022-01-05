@@ -94,7 +94,7 @@ namespace nhom5_qlgiaythethao.Class
             cmd = null;
         }
 
-        /* public static bool IsDate(string d)
+         public static bool IsDate(string d)
          {
              string[] parts = d.Split('/');
              if ((Convert.ToInt32(parts[0]) >= 1) && (Convert.ToInt32(parts[0]) <= 31) && (Convert.ToInt32(parts[1]) >= 1) && (Convert.ToInt32(parts[1]) <= 12) && (Convert.ToInt32(parts[2]) >= 1900))
@@ -108,13 +108,13 @@ namespace nhom5_qlgiaythethao.Class
              string[] parts = d.Split('/');
              string dt = String.Format("{0}/{1}/{2}", parts[1], parts[0], parts[2]);
              return dt;
-         }*/
-        public static DateTime ConvertDateTime(string d)
+         }
+        /*public static DateTime ConvertDateTime(string d)
         {
             DateTime dt = DateTime.ParseExact(d, "dd/mm/yyyy", CultureInfo.InvariantCulture);
             return dt;
         }    
-
+        */
         public static void FillCombo(string sql, ComboBox cbo, string ma, string ten)
         {
             SqlDataAdapter Mydata = new SqlDataAdapter(sql, Functions.Conn);
@@ -138,82 +138,93 @@ namespace nhom5_qlgiaythethao.Class
             return ma;
         }
 
-        public static string ChuyenSoSangChu(string sNumber)
-        {
-            int mLen, mDigit;
-            string mTemp = "";
-            string[] mNumText;
-            //Xóa các dấu "," nếu có
-            sNumber = sNumber.Replace(",", "");
-            mNumText = "không;một;hai;ba;bốn;năm;sáu;bảy;tám;chín".Split(';');
-            mLen = sNumber.Length - 1; // trừ 1 vì thứ tự đi từ 0
-            for (int i = 0; i <= mLen; i++)
-            {
-                mDigit = Convert.ToInt32(sNumber.Substring(i, 1));
-                mTemp = mTemp + " " + mNumText[mDigit];
-                if (mLen == i) // Chữ số cuối cùng không cần xét tiếp
-                    break;
-                switch ((mLen - i) % 9)
+         public static string ChuyenSoSangChu(string sNumber)
+         {
+            // Tùy biến đọc thêm phần thập phân
+             string[] strTachPhanSauDauPhay;
+                if (sNumber.Contains('.') || sNumber.Contains(','))
                 {
-                    case 0:
-                        mTemp = mTemp + " tỷ";
-                        if (sNumber.Substring(i + 1, 3) == "000")
-                            i = i + 3;
-                        if (sNumber.Substring(i + 1, 3) == "000")
-                            i = i + 3;
-                        if (sNumber.Substring(i + 1, 3) == "000")
-                            i = i + 3;
-                        break;
-                    case 6:
-                        mTemp = mTemp + " triệu";
-                        if (sNumber.Substring(i + 1, 3) == "000")
-                            i = i + 3;
-                        if (sNumber.Substring(i + 1, 3) == "000")
-                            i = i + 3;
-                        break;
-                    case 3:
-                        mTemp = mTemp + " nghìn";
-                        if (sNumber.Substring(i + 1, 3) == "000")
-                            i = i + 3;
-                        break;
-                    default:
-                        switch ((mLen - i) % 3)
-                        {
-                            case 2:
-                                mTemp = mTemp + " trăm";
-                                break;
-                            case 1:
-                                mTemp = mTemp + " mươi";
-                                break;
-                        }
-                        break;
+                    strTachPhanSauDauPhay = sNumber.Split(',', '.');
+                    return(ChuyenSoSangChu(strTachPhanSauDauPhay[0]) + " phẩy " + ChuyenSoSangChu(strTachPhanSauDauPhay[1]));
                 }
-            }
-            //Loại bỏ trường hợp x00
-            mTemp = mTemp.Replace("không mươi không ", "");
-            mTemp = mTemp.Replace("không mươi không", "");
-            //Loại bỏ trường hợp 00x
-            mTemp = mTemp.Replace("không mươi ", "linh ");
-            //Loại bỏ trường hợp x0, x>=2
-            mTemp = mTemp.Replace("mươi không", "mươi");
-            //Fix trường hợp 10
-            mTemp = mTemp.Replace("một mươi", "mười");
-            //Fix trường hợp x4, x>=2
-            mTemp = mTemp.Replace("mươi bốn", "mươi tư");
-            //Fix trường hợp x04
-            mTemp = mTemp.Replace("linh bốn", "linh tư");
-            //Fix trường hợp x5, x>=2
-            mTemp = mTemp.Replace("mươi năm", "mươi lăm");
-            //Fix trường hợp x1, x>=2
-            mTemp = mTemp.Replace("mươi một", "mươi mốt");
-            //Fix trường hợp x15
-            mTemp = mTemp.Replace("mười năm", "mười lăm");
-            //Bỏ ký tự space
-            mTemp = mTemp.Trim();
-            //Viết hoa ký tự đầu tiên
-            mTemp = mTemp.Substring(0, 1).ToUpper() + mTemp.Substring(1) + " đồng";
-            return mTemp;
-        }
+
+
+             int mLen, mDigit;
+             string mTemp = "";
+             string[] mNumText;
+             //Xóa các dấu "," nếu có
+             sNumber = sNumber.Replace(",", "");
+             mNumText = "không;một;hai;ba;bốn;năm;sáu;bảy;tám;chín".Split(';');
+             mLen = sNumber.Length - 1; // trừ 1 vì thứ tự đi từ 0
+             for (int i = 0; i <= mLen; i++)
+             {
+                 mDigit = Convert.ToInt32(sNumber.Substring(i, 1));
+                 mTemp = mTemp + " " + mNumText[mDigit];
+                 if (mLen == i) // Chữ số cuối cùng không cần xét tiếp
+                     break;
+                 switch ((mLen - i) % 9)
+                 {
+                     case 0:
+                         mTemp = mTemp + " tỷ";
+                         if (sNumber.Substring(i + 1, 3) == "000")
+                             i = i + 3;
+                         if (sNumber.Substring(i + 1, 3) == "000")
+                             i = i + 3;
+                         if (sNumber.Substring(i + 1, 3) == "000")
+                             i = i + 3;
+                         break;
+                     case 6:
+                         mTemp = mTemp + " triệu";
+                         if (sNumber.Substring(i + 1, 3) == "000")
+                             i = i + 3;
+                         if (sNumber.Substring(i + 1, 3) == "000")
+                             i = i + 3;
+                         break;
+                     case 3:
+                         mTemp = mTemp + " nghìn";
+                         if (sNumber.Substring(i + 1, 3) == "000")
+                             i = i + 3;
+                         break;
+                     default:
+                         switch ((mLen - i) % 3)
+                         {
+                             case 2:
+                                 mTemp = mTemp + " trăm";
+                                 break;
+                             case 1:
+                                 mTemp = mTemp + " mươi";
+                                 break;
+                         }
+                         break;
+                 }
+             }
+             //Loại bỏ trường hợp x00
+             mTemp = mTemp.Replace("không mươi không ", "");
+             mTemp = mTemp.Replace("không mươi không", "");
+             //Loại bỏ trường hợp 00x
+             mTemp = mTemp.Replace("không mươi ", "linh ");
+             //Loại bỏ trường hợp x0, x>=2
+             mTemp = mTemp.Replace("mươi không", "mươi");
+             //Fix trường hợp 10
+             mTemp = mTemp.Replace("một mươi", "mười");
+             //Fix trường hợp x4, x>=2
+             mTemp = mTemp.Replace("mươi bốn", "mươi tư");
+             //Fix trường hợp x04
+             mTemp = mTemp.Replace("linh bốn", "linh tư");
+             //Fix trường hợp x5, x>=2
+             mTemp = mTemp.Replace("mươi năm", "mươi lăm");
+             //Fix trường hợp x1, x>=2
+             mTemp = mTemp.Replace("mươi một", "mươi mốt");
+             //Fix trường hợp x15
+             mTemp = mTemp.Replace("mười năm", "mười lăm");
+             //Bỏ ký tự space
+             mTemp = mTemp.Trim();
+             //Viết hoa ký tự đầu tiên
+             mTemp = mTemp.Substring(0, 1).ToUpper() + mTemp.Substring(1) + " đồng";
+             return mTemp;
+         }
+        
+        
         //Hàm tạo khóa có dạng: TientoNgaythangnam_giophutgiay
         public static string CreateKey(string tiento)
         {

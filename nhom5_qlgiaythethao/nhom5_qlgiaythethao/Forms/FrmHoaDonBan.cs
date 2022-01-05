@@ -371,7 +371,8 @@ namespace nhom5_qlgiaythethao.Forms
             sql = "UPDATE tblHoaDonBan SET TongTien =" + Convert.ToSingle(tt) + " WHERE MaHoaDonBan = N'" + txtmahoadonban.Text + "'";
             Functions.RunSql(sql);
             txttongtien.Text = tt.ToString();
-            lblbangchu.Text = "Bằng chữ: " + Functions.ChuyenSoSangChu(tt.ToString());
+            //tt = Convert.ToDouble(txttongtien.Text);
+            lblbangchu.Text = "Bằng chữ: " + Functions.ChuyenSoSangChu(tt);
             ResetValuesHang();
             btnhuy.Enabled = true;
             btnthemmoi.Enabled = true;
