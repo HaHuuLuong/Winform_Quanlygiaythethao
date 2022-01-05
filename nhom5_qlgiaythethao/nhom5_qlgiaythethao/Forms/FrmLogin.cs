@@ -71,6 +71,7 @@ namespace nhom5_qlgiaythethao.Forms
         private void btnlogin_Click(object sender, EventArgs e)
         {
             DangNhap();
+            MessageBox.Show("thanh cong");
            
         }
 

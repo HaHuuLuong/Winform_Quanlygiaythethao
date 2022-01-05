@@ -133,26 +133,30 @@
             this.mnuNhanvien.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuque});
             this.mnuNhanvien.Name = "mnuNhanvien";
-            this.mnuNhanvien.Size = new System.Drawing.Size(223, 34);
+            this.mnuNhanvien.Size = new System.Drawing.Size(270, 34);
             this.mnuNhanvien.Text = "Nhân viên";
+            this.mnuNhanvien.Click += new System.EventHandler(this.mnuNhanvien_Click);
             // 
             // mnuque
             // 
             this.mnuque.Name = "mnuque";
-            this.mnuque.Size = new System.Drawing.Size(147, 34);
+            this.mnuque.Size = new System.Drawing.Size(270, 34);
             this.mnuque.Text = "Quê";
+            this.mnuque.Click += new System.EventHandler(this.mnuque_Click);
             // 
             // mnuKhachhang
             // 
             this.mnuKhachhang.Name = "mnuKhachhang";
-            this.mnuKhachhang.Size = new System.Drawing.Size(223, 34);
+            this.mnuKhachhang.Size = new System.Drawing.Size(270, 34);
             this.mnuKhachhang.Text = "Khách hàng";
+            this.mnuKhachhang.Click += new System.EventHandler(this.mnuKhachhang_Click);
             // 
             // mnuNhacungcap
             // 
             this.mnuNhacungcap.Name = "mnuNhacungcap";
-            this.mnuNhacungcap.Size = new System.Drawing.Size(223, 34);
+            this.mnuNhacungcap.Size = new System.Drawing.Size(270, 34);
             this.mnuNhacungcap.Text = "Nhà cung cấp";
+            this.mnuNhacungcap.Click += new System.EventHandler(this.mnuNhacungcap_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -188,13 +192,13 @@
             // mnuFindSanpham
             // 
             this.mnuFindSanpham.Name = "mnuFindSanpham";
-            this.mnuFindSanpham.Size = new System.Drawing.Size(270, 34);
+            this.mnuFindSanpham.Size = new System.Drawing.Size(229, 34);
             this.mnuFindSanpham.Text = "Sản phẩm";
             // 
             // mnuFindHoadonnhap
             // 
             this.mnuFindHoadonnhap.Name = "mnuFindHoadonnhap";
-            this.mnuFindHoadonnhap.Size = new System.Drawing.Size(270, 34);
+            this.mnuFindHoadonnhap.Size = new System.Drawing.Size(229, 34);
             this.mnuFindHoadonnhap.Text = "Hoá đơn nhập";
             this.mnuFindHoadonnhap.Click += new System.EventHandler(this.mnuFindHoadonnhap_Click);
             // 

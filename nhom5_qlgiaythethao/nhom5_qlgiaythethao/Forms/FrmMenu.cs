@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using nhom5_qlgiaythethao.Forms;
+using System.Data;
 
 namespace nhom5_qlgiaythethao
 {
@@ -26,8 +26,12 @@ namespace nhom5_qlgiaythethao
 
         private void mnuThoat_Click(object sender, EventArgs e)
         {
-            Class.Functions.Disconnect();
-            Application.Exit();
+            if(isLogout)
+            {
+                Class.Functions.Disconnect();
+                Application.Exit();
+            }    
+            
         }
 
         public void Logout()
@@ -67,9 +71,40 @@ namespace nhom5_qlgiaythethao
 
         private void mnuFindHoadonnhap_Click(object sender, EventArgs e)
         {
-            Forms.FrmTimKiemHoaDonNhap f = new Forms.FrmTimKiemHoaDonNhap();
+            /*Forms.FrmTimKiemHoaDonNhap f = new Forms.FrmTimKiemHoaDonNhap();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();*/
+        }
+
+        private void mnuNhanvien_Click(object sender, EventArgs e)
+        {
+            FrmDanhMucNhanVien f = new FrmDanhMucNhanVien();
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
+
+        }
+
+        private void mnuKhachhang_Click(object sender, EventArgs e)
+        {
+            Forms.FrmDanhMucKhachHang f = new FrmDanhMucKhachHang();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
+
+        private void mnuNhacungcap_Click(object sender, EventArgs e)
+        {
+            Forms.FrmDanhMucNhaCungCap f = new FrmDanhMucNhaCungCap();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+
+        }
+
+        private void mnuque_Click(object sender, EventArgs e)
+        {
+            FrmQue f = new FrmQue();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+
         }
     }
 }

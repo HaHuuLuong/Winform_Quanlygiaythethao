@@ -14,3 +14,7 @@ D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\n
 D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.Forms.FrmBaoCaoHoaDonBan.resources
 D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.csproj.ResolveComReference.cache
 D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.Forms.FrmTimKiemHoaDonNhap.resources
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.Forms.FrmDanhMucNhanVien.resources
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.Forms.FrmDanhMucKhachHang.resources
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.Forms.FrmDanhMucNhaCungCap.resources
+D:\Winform_Quanlygiaythethao\nhom5_qlgiaythethao\nhom5_qlgiaythethao\obj\Debug\nhom5_qlgiaythethao.Forms.FrmQue.resources
