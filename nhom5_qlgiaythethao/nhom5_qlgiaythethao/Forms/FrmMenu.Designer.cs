@@ -188,14 +188,15 @@
             // mnuFindSanpham
             // 
             this.mnuFindSanpham.Name = "mnuFindSanpham";
-            this.mnuFindSanpham.Size = new System.Drawing.Size(229, 34);
+            this.mnuFindSanpham.Size = new System.Drawing.Size(270, 34);
             this.mnuFindSanpham.Text = "Sản phẩm";
             // 
             // mnuFindHoadonnhap
             // 
             this.mnuFindHoadonnhap.Name = "mnuFindHoadonnhap";
-            this.mnuFindHoadonnhap.Size = new System.Drawing.Size(229, 34);
+            this.mnuFindHoadonnhap.Size = new System.Drawing.Size(270, 34);
             this.mnuFindHoadonnhap.Text = "Hoá đơn nhập";
+            this.mnuFindHoadonnhap.Click += new System.EventHandler(this.mnuFindHoadonnhap_Click);
             // 
             // mnuBaocao
             // 
@@ -211,25 +212,25 @@
             // mnuBCSanpham
             // 
             this.mnuBCSanpham.Name = "mnuBCSanpham";
-            this.mnuBCSanpham.Size = new System.Drawing.Size(270, 34);
+            this.mnuBCSanpham.Size = new System.Drawing.Size(229, 34);
             this.mnuBCSanpham.Text = "Sản phẩm";
             // 
             // mnuBCHoadonnhap
             // 
             this.mnuBCHoadonnhap.Name = "mnuBCHoadonnhap";
-            this.mnuBCHoadonnhap.Size = new System.Drawing.Size(270, 34);
+            this.mnuBCHoadonnhap.Size = new System.Drawing.Size(229, 34);
             this.mnuBCHoadonnhap.Text = "Hoá đơn nhập";
             // 
             // mnuBCDoanhthu
             // 
             this.mnuBCDoanhthu.Name = "mnuBCDoanhthu";
-            this.mnuBCDoanhthu.Size = new System.Drawing.Size(270, 34);
+            this.mnuBCDoanhthu.Size = new System.Drawing.Size(229, 34);
             this.mnuBCDoanhthu.Text = "Doanh thu";
             // 
             // mnuBCHoadonban
             // 
             this.mnuBCHoadonban.Name = "mnuBCHoadonban";
-            this.mnuBCHoadonban.Size = new System.Drawing.Size(270, 34);
+            this.mnuBCHoadonban.Size = new System.Drawing.Size(229, 34);
             this.mnuBCHoadonban.Text = "Hoá đơn bán";
             this.mnuBCHoadonban.Click += new System.EventHandler(this.mnuBCHoadonban_Click);
             // 
@@ -260,6 +261,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::nhom5_qlgiaythethao.Properties.Resources.thiet_ke_cua_hang_giay_the_thao_dep;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1126, 661);
             this.Controls.Add(this.menuStrip1);
             this.Name = "FrmMenu";

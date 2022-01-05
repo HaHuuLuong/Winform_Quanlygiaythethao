@@ -273,6 +273,16 @@ namespace nhom5_qlgiaythethao.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Thêm_tiêu_đề_phụ__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Thêm_tiêu_đề_phụ__3_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thiet_ke_cua_hang_giay_the_thao_dep {
             get {
                 object obj = ResourceManager.GetObject("thiet ke cua hang giay the thao dep", resourceCulture);

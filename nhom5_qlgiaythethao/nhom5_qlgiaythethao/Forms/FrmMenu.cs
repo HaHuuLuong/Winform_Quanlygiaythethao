@@ -64,5 +64,12 @@ namespace nhom5_qlgiaythethao
             f.Show();
 
         }
+
+        private void mnuFindHoadonnhap_Click(object sender, EventArgs e)
+        {
+            Forms.FrmTimKiemHoaDonNhap f = new Forms.FrmTimKiemHoaDonNhap();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
     }
 }
