@@ -220,7 +220,7 @@ namespace nhom5_qlgiaythethao.Class
              //Bỏ ký tự space
              mTemp = mTemp.Trim();
              //Viết hoa ký tự đầu tiên
-             mTemp = mTemp.Substring(0, 1).ToUpper() + mTemp.Substring(1) + " đồng";
+             //mTemp = mTemp.Substring(0, 1).ToUpper() + mTemp.Substring(1) + " đồng";
              return mTemp;
          }
         
