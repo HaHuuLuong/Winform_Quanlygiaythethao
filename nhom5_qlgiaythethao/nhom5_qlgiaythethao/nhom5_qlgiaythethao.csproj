@@ -68,6 +68,12 @@
     <Compile Include="Forms\FrmBaoCaoHoaDonBan.Designer.cs">
       <DependentUpon>FrmBaoCaoHoaDonBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmBaoCaoHoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBaoCaoHoaDonNhap.Designer.cs">
+      <DependentUpon>FrmBaoCaoHoaDonNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmDanhMucKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
     </Compile>
     <Compile Include="Forms\FrmHoaDonBan.Designer.cs">
       <DependentUpon>FrmHoaDonBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmHoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHoaDonNhap.Designer.cs">
+      <DependentUpon>FrmHoaDonNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -121,6 +133,9 @@
     <EmbeddedResource Include="Forms\FrmBaoCaoHoaDonBan.resx">
       <DependentUpon>FrmBaoCaoHoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBaoCaoHoaDonNhap.resx">
+      <DependentUpon>FrmBaoCaoHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmDanhMucKhachHang.resx">
       <DependentUpon>FrmDanhMucKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmHoaDonBan.resx">
       <DependentUpon>FrmHoaDonBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHoaDonNhap.resx">
+      <DependentUpon>FrmHoaDonNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

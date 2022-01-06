@@ -106,5 +106,20 @@ namespace nhom5_qlgiaythethao
             f.Show();
 
         }
+
+        private void mnuBCHoadonnhap_Click(object sender, EventArgs e)
+        {
+            Forms.FrmBaoCaoHoaDonNhap f = new FrmBaoCaoHoaDonNhap();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+
+        }
+
+        private void mnuHoadonnhap_Click(object sender, EventArgs e)
+        {
+            Forms.FrmHoaDonNhap f = new FrmHoaDonNhap();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
     }
 }

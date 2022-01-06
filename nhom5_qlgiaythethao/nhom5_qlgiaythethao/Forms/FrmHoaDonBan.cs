@@ -246,7 +246,8 @@ namespace nhom5_qlgiaythethao.Forms
             sql = "UPDATE tblSanPham SET SoLuong =" + SLcon + " WHERE MaSanPham= N'" + cbomasanpham.SelectedValue + "'";
             Functions.RunSql(sql);
             // Cập nhật lại tổng tiền cho hóa đơn bán
-
+            /*decimal oldAmount;
+            bool succes = Decimal.TryParse(txtthanhtien.Text, NumberStyles.Any, info, out oldAmount);*/
             tong = Convert.ToDouble(Functions.GetFieldValues("SELECT TongTien FROM tblHoaDonBan WHERE MaHoaDonBan = N'" + txtmahoadonban.Text + "'"));
             Tongmoi = tong + Convert.ToDouble(txtthanhtien.Text);
             sql = "UPDATE tblHoaDonBan SET TongTien =" + Tongmoi + " WHERE MaHoaDonBan = N'" + txtmahoadonban.Text + "'";
