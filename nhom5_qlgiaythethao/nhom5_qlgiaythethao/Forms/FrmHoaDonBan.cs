@@ -545,6 +545,11 @@ namespace nhom5_qlgiaythethao.Forms
             else
                 e.Handled = true;
         }
+
+        private void groupThongtinchung_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

@@ -71,14 +71,14 @@ namespace nhom5_qlgiaythethao.Forms
             string sql;
             if ((cbomsanpham.Text.Trim().Length == 0) || (cbomsanpham.Text == "0"))
             {
-                MessageBox.Show("Bạn phải chọn sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn chưa chọn sản phẩm để tìm ! Mời bạn chọn: ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cbomsanpham.Text = "";
 
                 return;
             }
             if (rdobtn1.Checked == false && rdobtn2.Checked == false && rdobtn3.Checked == false && rdobtn4.Checked == false)
             {
-                MessageBox.Show("Bạn phải chọn quý bán hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn chưa chọn quý bán hàng! Mời bạn chọn: ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
 
@@ -107,6 +107,7 @@ namespace nhom5_qlgiaythethao.Forms
                     dgnhaphang.DataSource = tblBCHDB;
                     Load_dghoadonnhap();
                     txttongtien.Text = tongtienbaocao().ToString();
+                    lblbangchu.Text = "Bằng chữ: " + Class.Functions.ChuyenSoSangChu(txttongtien.Text);
 
 
                 }
@@ -314,6 +315,14 @@ namespace nhom5_qlgiaythethao.Forms
                 exRange = exSheet.Cells[cot + 1][hang + 14];
                 exRange.Font.Bold = true;
                 exRange.Value2 = txttongtien.Text + " Đồng";
+                // exRange.Range["H17:H17"].Value = lblbangchu.Text + " Đồng";
+                exRange = exSheet.Cells[cot+1][hang + 15];
+                exRange.Font.Bold = true;
+                exRange.Value2 = "Bằng chữ:";
+                exRange = exSheet.Cells[cot + 2][hang + 12];
+                exRange.Font.Bold = true;
+                exRange.Value2 = lblbangchu.Text + " Đồng";
+
 
             }
             if (rdobtn2.Checked == true)
@@ -352,6 +361,13 @@ namespace nhom5_qlgiaythethao.Forms
                 exRange = exSheet.Cells[cot + 1][hang + 14];
                 exRange.Font.Bold = true;
                 exRange.Value2 = txttongtien.Text + " Đồng";
+
+                exRange = exSheet.Cells[cot + 1][hang + 15];
+                exRange.Font.Bold = true;
+                exRange.Value2 = "Bằng chữ:";
+                exRange = exSheet.Cells[cot + 2][hang + 12];
+                exRange.Font.Bold = true;
+                exRange.Value2 = lblbangchu.Text + " Đồng";
             }
             if (rdobtn3.Checked == true)
             {
@@ -389,6 +405,13 @@ namespace nhom5_qlgiaythethao.Forms
                 exRange = exSheet.Cells[cot + 1][hang + 14];
                 exRange.Font.Bold = true;
                 exRange.Value2 = txttongtien.Text + " Đồng";
+
+                exRange = exSheet.Cells[cot + 1][hang + 15];
+                exRange.Font.Bold = true;
+                exRange.Value2 = "Bằng chữ:";
+                exRange = exSheet.Cells[cot + 2][hang + 12];
+                exRange.Font.Bold = true;
+                exRange.Value2 = lblbangchu.Text + " Đồng";
             }
             if (rdobtn4.Checked == true)
             {
@@ -427,9 +450,21 @@ namespace nhom5_qlgiaythethao.Forms
                 exRange = exSheet.Cells[cot + 1][hang + 14];
                 exRange.Font.Bold = true;
                 exRange.Value2 = txttongtien.Text + " Đồng";
+
+                exRange = exSheet.Cells[cot + 1][hang + 15];
+                exRange.Font.Bold = true;
+                exRange.Value2 = "Bằng chữ:";
+                exRange = exSheet.Cells[cot + 2][hang + 12];
+                exRange.Font.Bold = true;
+                exRange.Value2 = lblbangchu.Text + " Đồng";
             }
 
             exApp.Visible = true;
+        }
+
+        private void lblbangchu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

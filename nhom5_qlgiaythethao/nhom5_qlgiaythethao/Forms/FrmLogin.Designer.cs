@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@
             // 
             this.btnlogin.BackColor = System.Drawing.Color.Lime;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.Location = new System.Drawing.Point(121, 261);
+            this.btnlogin.Location = new System.Drawing.Point(91, 296);
             this.btnlogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(144, 42);
@@ -69,7 +70,7 @@
             // 
             this.btncancel.BackColor = System.Drawing.Color.Silver;
             this.btncancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancel.Location = new System.Drawing.Point(271, 261);
+            this.btncancel.Location = new System.Drawing.Point(262, 296);
             this.btncancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(133, 42);
@@ -122,7 +123,7 @@
             this.btnSave.AutoSize = true;
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(391, 191);
+            this.btnSave.Location = new System.Drawing.Point(377, 238);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(168, 29);
             this.btnSave.TabIndex = 15;
@@ -131,6 +132,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.txtMatKhau);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.label3);
@@ -143,6 +145,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(606, 374);
             this.panel1.TabIndex = 16;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(377, 188);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(176, 29);
+            this.checkBox1.TabIndex = 16;
+            this.checkBox1.Text = "Hiện mật khẩu";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // FrmLogin
             // 
@@ -173,5 +188,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox btnSave;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

@@ -79,5 +79,13 @@ namespace nhom5_qlgiaythethao.Forms
         {
             this.Close();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+                txtMatKhau.PasswordChar = (char)0;
+            else
+                txtMatKhau.PasswordChar = '*';
+        }
     }
 }

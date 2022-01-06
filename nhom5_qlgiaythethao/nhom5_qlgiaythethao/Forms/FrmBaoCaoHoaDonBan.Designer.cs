@@ -43,6 +43,7 @@
             this.btntimlai = new System.Windows.Forms.Button();
             this.btntimkiem = new System.Windows.Forms.Button();
             this.cbomsanpham = new System.Windows.Forms.ComboBox();
+            this.lblbangchu = new System.Windows.Forms.Label();
             this.groupquy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgnhaphang)).BeginInit();
             this.SuspendLayout();
@@ -122,7 +123,7 @@
             // 
             // txttongtien
             // 
-            this.txttongtien.Location = new System.Drawing.Point(732, 507);
+            this.txttongtien.Location = new System.Drawing.Point(803, 483);
             this.txttongtien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txttongtien.Name = "txttongtien";
             this.txttongtien.Size = new System.Drawing.Size(148, 26);
@@ -131,7 +132,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(611, 512);
+            this.label4.Location = new System.Drawing.Point(686, 486);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 20);
@@ -223,12 +224,26 @@
             this.cbomsanpham.Size = new System.Drawing.Size(219, 28);
             this.cbomsanpham.TabIndex = 14;
             // 
+            // lblbangchu
+            // 
+            this.lblbangchu.AutoSize = true;
+            this.lblbangchu.BackColor = System.Drawing.Color.Honeydew;
+            this.lblbangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbangchu.ForeColor = System.Drawing.Color.Orange;
+            this.lblbangchu.Location = new System.Drawing.Point(115, 533);
+            this.lblbangchu.Name = "lblbangchu";
+            this.lblbangchu.Size = new System.Drawing.Size(94, 22);
+            this.lblbangchu.TabIndex = 25;
+            this.lblbangchu.Text = "Bằng chữ";
+            this.lblbangchu.Click += new System.EventHandler(this.lblbangchu_Click);
+            // 
             // FrmBaoCaoHoaDonBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1130, 682);
+            this.Controls.Add(this.lblbangchu);
             this.Controls.Add(this.groupquy);
             this.Controls.Add(this.dgnhaphang);
             this.Controls.Add(this.txttongtien);
@@ -268,5 +283,6 @@
         private System.Windows.Forms.Button btntimlai;
         private System.Windows.Forms.Button btntimkiem;
         private System.Windows.Forms.ComboBox cbomsanpham;
+        private System.Windows.Forms.Label lblbangchu;
     }
 }

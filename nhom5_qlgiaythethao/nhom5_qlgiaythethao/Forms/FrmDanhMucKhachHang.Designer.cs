@@ -188,7 +188,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label1.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(276, 74);
+            this.label1.Location = new System.Drawing.Point(224, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(478, 39);
             this.label1.TabIndex = 17;

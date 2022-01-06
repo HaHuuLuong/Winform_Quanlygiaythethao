@@ -415,6 +415,7 @@
             this.groupThongtinchung.TabIndex = 4;
             this.groupThongtinchung.TabStop = false;
             this.groupThongtinchung.Text = "Thông tin chung";
+            this.groupThongtinchung.Enter += new System.EventHandler(this.groupThongtinchung_Enter);
             // 
             // txtngayban
             // 
