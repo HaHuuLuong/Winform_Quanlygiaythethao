@@ -44,23 +44,23 @@
             // 
             // txttenque
             // 
-            this.txttenque.Location = new System.Drawing.Point(294, 164);
+            this.txttenque.Location = new System.Drawing.Point(306, 158);
             this.txttenque.Name = "txttenque";
             this.txttenque.Size = new System.Drawing.Size(134, 26);
             this.txttenque.TabIndex = 21;
             // 
             // txtmaque
             // 
-            this.txtmaque.Location = new System.Drawing.Point(294, 123);
+            this.txtmaque.Location = new System.Drawing.Point(306, 95);
             this.txtmaque.Name = "txtmaque";
             this.txtmaque.Size = new System.Drawing.Size(134, 26);
             this.txtmaque.TabIndex = 20;
             // 
             // btnboqua
             // 
-            this.btnboqua.Location = new System.Drawing.Point(618, 210);
+            this.btnboqua.Location = new System.Drawing.Point(684, 195);
             this.btnboqua.Name = "btnboqua";
-            this.btnboqua.Size = new System.Drawing.Size(74, 38);
+            this.btnboqua.Size = new System.Drawing.Size(87, 53);
             this.btnboqua.TabIndex = 19;
             this.btnboqua.Text = "Bỏ qua";
             this.btnboqua.UseVisualStyleBackColor = true;
@@ -68,9 +68,9 @@
             // 
             // btnluu
             // 
-            this.btnluu.Location = new System.Drawing.Point(618, 281);
+            this.btnluu.Location = new System.Drawing.Point(684, 268);
             this.btnluu.Name = "btnluu";
-            this.btnluu.Size = new System.Drawing.Size(74, 38);
+            this.btnluu.Size = new System.Drawing.Size(87, 51);
             this.btnluu.TabIndex = 18;
             this.btnluu.Text = "Lưu";
             this.btnluu.UseVisualStyleBackColor = true;
@@ -78,9 +78,9 @@
             // 
             // btndong
             // 
-            this.btndong.Location = new System.Drawing.Point(618, 354);
+            this.btndong.Location = new System.Drawing.Point(684, 334);
             this.btndong.Name = "btndong";
-            this.btndong.Size = new System.Drawing.Size(74, 38);
+            this.btndong.Size = new System.Drawing.Size(87, 58);
             this.btndong.TabIndex = 17;
             this.btndong.Text = "Đóng";
             this.btndong.UseVisualStyleBackColor = true;
@@ -88,9 +88,9 @@
             // 
             // btnxoa
             // 
-            this.btnxoa.Location = new System.Drawing.Point(508, 354);
+            this.btnxoa.Location = new System.Drawing.Point(564, 334);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(74, 38);
+            this.btnxoa.Size = new System.Drawing.Size(97, 58);
             this.btnxoa.TabIndex = 16;
             this.btnxoa.Text = "Xoá";
             this.btnxoa.UseVisualStyleBackColor = true;
@@ -98,9 +98,9 @@
             // 
             // btnsua
             // 
-            this.btnsua.Location = new System.Drawing.Point(508, 281);
+            this.btnsua.Location = new System.Drawing.Point(564, 268);
             this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(74, 38);
+            this.btnsua.Size = new System.Drawing.Size(97, 51);
             this.btnsua.TabIndex = 15;
             this.btnsua.Text = "Sửa";
             this.btnsua.UseVisualStyleBackColor = true;
@@ -108,9 +108,10 @@
             // 
             // btnthem
             // 
-            this.btnthem.Location = new System.Drawing.Point(508, 210);
+            this.btnthem.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnthem.Location = new System.Drawing.Point(571, 195);
             this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(74, 38);
+            this.btnthem.Size = new System.Drawing.Size(90, 53);
             this.btnthem.TabIndex = 14;
             this.btnthem.Text = "Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
@@ -119,29 +120,31 @@
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(180, 214);
+            this.dataGridView.Location = new System.Drawing.Point(49, 214);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(292, 178);
+            this.dataGridView.Size = new System.Drawing.Size(490, 178);
             this.dataGridView.TabIndex = 13;
             this.dataGridView.Click += new System.EventHandler(this.dataGridView_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(211, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 20);
+            this.label2.Size = new System.Drawing.Size(92, 25);
             this.label2.TabIndex = 12;
             this.label2.Text = "Tên quê";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(211, 123);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(216, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 20);
+            this.label1.Size = new System.Drawing.Size(84, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Mã quê";
             // 
@@ -149,6 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(873, 514);
             this.Controls.Add(this.txttenque);
             this.Controls.Add(this.txtmaque);

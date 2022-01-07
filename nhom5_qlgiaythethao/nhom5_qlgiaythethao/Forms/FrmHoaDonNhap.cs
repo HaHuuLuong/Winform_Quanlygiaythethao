@@ -339,11 +339,7 @@ namespace nhom5_qlgiaythethao.Forms
                 MessageBox.Show("Bạn chưa chọn mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (cbomasp.Text == "")
-            {
-                MessageBox.Show("Bạn chưa chọn mã sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            cbomasp.Enabled = false;
             string sql;
             sql = "UPDATE tblHoaDonNhap SET NgayNhap = N'" + Functions.ConvertDateTime(txtngaynhap.Text) + "', manhanvien = N'" + cbomanhanvien.SelectedValue.ToString() + "' WHERE mahoadonnhap = N'" + txtmahdnhap.Text + "'";
             Functions.RunSql(sql);

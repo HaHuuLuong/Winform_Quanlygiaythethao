@@ -121,5 +121,62 @@ namespace nhom5_qlgiaythethao
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }
+
+        private void mnuSanpham_Click(object sender, EventArgs e)
+        {
+            Forms.FrmSanPham f = new FrmSanPham();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
+
+        private void mnuFindSanpham_Click(object sender, EventArgs e)
+        {
+            Forms.FrmTimKiemSanPham f = new FrmTimKiemSanPham();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
+
+        private void mnuBCDoanhthu_Click(object sender, EventArgs e)
+        {
+            Forms.FrmBaoCaoDoanhThu f = new FrmBaoCaoDoanhThu();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+
+        }
+
+        private void mnutheloai_Click(object sender, EventArgs e)
+        {
+            Forms.FrmTheLoai f = new FrmTheLoai();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
+
+        private void mnumausac_Click(object sender, EventArgs e)
+        {
+            Forms.FrmMauSac f = new FrmMauSac();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
+
+        private void mnuchatlieu_Click(object sender, EventArgs e)
+        {
+            Forms.FrmChatLieu f = new FrmChatLieu();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
+
+        private void mnunuocsanxuat_Click(object sender, EventArgs e)
+        {
+            Forms.FrmNuocSanXuat f = new FrmNuocSanXuat();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
+
+        private void mnuBCSanpham_Click(object sender, EventArgs e)
+        {
+            Forms.FrmBaoCaoSanPhamDuocMua f = new FrmBaoCaoSanPhamDuocMua();
+            f.StartPosition = FormStartPosition.CenterScreen;
+            f.Show();
+        }
     }
 }

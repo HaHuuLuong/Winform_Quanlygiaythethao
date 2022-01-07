@@ -62,6 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Functions.cs" />
+    <Compile Include="Forms\FrmBaoCaoDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>FrmBaoCaoDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmBaoCaoHoaDonBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,18 @@
     </Compile>
     <Compile Include="Forms\FrmBaoCaoHoaDonNhap.Designer.cs">
       <DependentUpon>FrmBaoCaoHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmBaoCaoSanPhamDuocMua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBaoCaoSanPhamDuocMua.Designer.cs">
+      <DependentUpon>FrmBaoCaoSanPhamDuocMua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmChatLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmChatLieu.Designer.cs">
+      <DependentUpon>FrmChatLieu.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmDanhMucKhachHang.cs">
       <SubType>Form</SubType>
@@ -110,11 +128,23 @@
     <Compile Include="Forms\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmMauSac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMauSac.Designer.cs">
+      <DependentUpon>FrmMauSac.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmNuocSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNuocSanXuat.Designer.cs">
+      <DependentUpon>FrmNuocSanXuat.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmQue.cs">
       <SubType>Form</SubType>
@@ -122,19 +152,46 @@
     <Compile Include="Forms\FrmQue.Designer.cs">
       <DependentUpon>FrmQue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSanPham.Designer.cs">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTheLoai.Designer.cs">
+      <DependentUpon>FrmTheLoai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmTimKiemHoaDonNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmTimKiemHoaDonNhap.Designer.cs">
       <DependentUpon>FrmTimKiemHoaDonNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmTimKiemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTimKiemSanPham.Designer.cs">
+      <DependentUpon>FrmTimKiemSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmBaoCaoDoanhThu.resx">
+      <DependentUpon>FrmBaoCaoDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmBaoCaoHoaDonBan.resx">
       <DependentUpon>FrmBaoCaoHoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmBaoCaoHoaDonNhap.resx">
       <DependentUpon>FrmBaoCaoHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBaoCaoSanPhamDuocMua.resx">
+      <DependentUpon>FrmBaoCaoSanPhamDuocMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmChatLieu.resx">
+      <DependentUpon>FrmChatLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmDanhMucKhachHang.resx">
       <DependentUpon>FrmDanhMucKhachHang.cs</DependentUpon>
@@ -154,14 +211,29 @@
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMauSac.resx">
+      <DependentUpon>FrmMauSac.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNuocSanXuat.resx">
+      <DependentUpon>FrmNuocSanXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmQue.resx">
       <DependentUpon>FrmQue.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSanPham.resx">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTheLoai.resx">
+      <DependentUpon>FrmTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTimKiemHoaDonNhap.resx">
       <DependentUpon>FrmTimKiemHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTimKiemSanPham.resx">
+      <DependentUpon>FrmTimKiemSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -299,6 +371,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\team 5 %283%29.png" />
+    <None Include="Resources\Iconsmind-Outline-Monitor-Analytics.ico" />
     <None Include="Resources\Thêm tiêu đề phụ %283%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

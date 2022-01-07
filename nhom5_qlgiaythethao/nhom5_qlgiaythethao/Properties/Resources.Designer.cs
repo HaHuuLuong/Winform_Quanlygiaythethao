@@ -213,6 +213,16 @@ namespace nhom5_qlgiaythethao.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Iconsmind_Outline_Monitor_Analytics {
+            get {
+                object obj = ResourceManager.GetObject("Iconsmind-Outline-Monitor-Analytics", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_login_lt2 {
             get {
                 object obj = ResourceManager.GetObject("logo_login_lt2", resourceCulture);

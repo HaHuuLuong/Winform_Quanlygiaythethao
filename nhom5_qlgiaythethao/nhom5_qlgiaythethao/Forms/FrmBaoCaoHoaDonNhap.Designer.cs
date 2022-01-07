@@ -43,7 +43,7 @@
             // 
             // txttongtien
             // 
-            this.txttongtien.Location = new System.Drawing.Point(659, 446);
+            this.txttongtien.Location = new System.Drawing.Point(668, 475);
             this.txttongtien.Name = "txttongtien";
             this.txttongtien.Size = new System.Drawing.Size(100, 26);
             this.txttongtien.TabIndex = 18;
@@ -51,18 +51,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(575, 449);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(562, 475);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 20);
+            this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 17;
             this.label2.Text = "Tổng Tiền";
             // 
             // lbbangchu
             // 
             this.lbbangchu.AutoSize = true;
-            this.lbbangchu.Location = new System.Drawing.Point(202, 449);
+            this.lbbangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbbangchu.Location = new System.Drawing.Point(197, 442);
             this.lbbangchu.Name = "lbbangchu";
-            this.lbbangchu.Size = new System.Drawing.Size(84, 20);
+            this.lbbangchu.Size = new System.Drawing.Size(93, 20);
             this.lbbangchu.TabIndex = 16;
             this.lbbangchu.Text = "Bằng Chữ:";
             // 
@@ -78,7 +80,7 @@
             // cbonhacc
             // 
             this.cbonhacc.FormattingEnabled = true;
-            this.cbonhacc.Location = new System.Drawing.Point(460, 171);
+            this.cbonhacc.Location = new System.Drawing.Point(508, 171);
             this.cbonhacc.Name = "cbonhacc";
             this.cbonhacc.Size = new System.Drawing.Size(121, 28);
             this.cbonhacc.TabIndex = 14;
@@ -86,9 +88,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(327, 174);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 20);
+            this.label1.Size = new System.Drawing.Size(155, 25);
             this.label1.TabIndex = 13;
             this.label1.Text = "Nhà Cung Cấp";
             // 
@@ -98,7 +101,7 @@
             this.btndong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btndong.Location = new System.Drawing.Point(635, 542);
             this.btndong.Name = "btndong";
-            this.btndong.Size = new System.Drawing.Size(96, 42);
+            this.btndong.Size = new System.Drawing.Size(124, 42);
             this.btndong.TabIndex = 26;
             this.btndong.Text = "Đóng";
             this.btndong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -109,9 +112,9 @@
             // 
             this.btnin.Image = global::nhom5_qlgiaythethao.Properties.Resources.Aha_Soft_Universal_Shop_Print1;
             this.btnin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnin.Location = new System.Drawing.Point(502, 542);
+            this.btnin.Location = new System.Drawing.Point(447, 542);
             this.btnin.Name = "btnin";
-            this.btnin.Size = new System.Drawing.Size(101, 42);
+            this.btnin.Size = new System.Drawing.Size(156, 42);
             this.btnin.TabIndex = 25;
             this.btnin.Text = "In Báo Cáo";
             this.btnin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -122,9 +125,9 @@
             // 
             this.btntimlai.Image = global::nhom5_qlgiaythethao.Properties.Resources.Ahmadhania_Spherical_Redo;
             this.btntimlai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btntimlai.Location = new System.Drawing.Point(360, 542);
+            this.btntimlai.Location = new System.Drawing.Point(289, 542);
             this.btntimlai.Name = "btntimlai";
-            this.btntimlai.Size = new System.Drawing.Size(98, 42);
+            this.btntimlai.Size = new System.Drawing.Size(125, 42);
             this.btntimlai.TabIndex = 24;
             this.btntimlai.Text = "Tìm Lại";
             this.btntimlai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,9 +138,9 @@
             // 
             this.btntimkiem.Image = global::nhom5_qlgiaythethao.Properties.Resources.Icojam_Blue_Bits_Application_search;
             this.btntimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btntimkiem.Location = new System.Drawing.Point(209, 542);
+            this.btntimkiem.Location = new System.Drawing.Point(132, 542);
             this.btntimkiem.Name = "btntimkiem";
-            this.btntimkiem.Size = new System.Drawing.Size(98, 42);
+            this.btntimkiem.Size = new System.Drawing.Size(129, 42);
             this.btntimkiem.TabIndex = 23;
             this.btntimkiem.Text = "Tìm Kiếm";
             this.btntimkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -148,6 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(982, 643);
             this.Controls.Add(this.btndong);
             this.Controls.Add(this.btnin);
