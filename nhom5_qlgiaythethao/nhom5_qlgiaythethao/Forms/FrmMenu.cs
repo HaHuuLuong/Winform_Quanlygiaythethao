@@ -71,9 +71,9 @@ namespace nhom5_qlgiaythethao
 
         private void mnuFindHoadonnhap_Click(object sender, EventArgs e)
         {
-            /*Forms.FrmTimKiemHoaDonNhap f = new Forms.FrmTimKiemHoaDonNhap();
+            Forms.FrmTimKiemHoaDonNhap f = new Forms.FrmTimKiemHoaDonNhap();
             f.StartPosition = FormStartPosition.CenterScreen;
-            f.Show();*/
+            f.Show();
         }
 
         private void mnuNhanvien_Click(object sender, EventArgs e)

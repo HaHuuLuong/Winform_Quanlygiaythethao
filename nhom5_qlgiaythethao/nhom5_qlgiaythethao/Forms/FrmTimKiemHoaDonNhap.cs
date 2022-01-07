@@ -21,8 +21,8 @@ namespace nhom5_qlgiaythethao.Forms
 
         private void FrmTimKiemHoaDonNhap_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.Red;
-            this.TransparencyKey = Color.Red;
+            /*this.BackColor = Color.Red;
+            this.TransparencyKey = Color.Red;*/
             Functions.FillCombo("SELECT MaSanPham, TenSanPham FROM tblSanPham", cbomasanpham, "MaSanPham", "MaSanPham");
             cbomasanpham.SelectedIndex = -1;
             Functions.FillCombo("SELECT MaNhaCungCap, TenNhaCungCap FROM tblNhaCungCap", cbomanhacungcap, "MaNhaCungCap", "MaNhaCungCap");
@@ -156,6 +156,13 @@ namespace nhom5_qlgiaythethao.Forms
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btntimlai_Click(object sender, EventArgs e)
+        {
+            groupBox1.Enabled = true;
+            ResetValues();
+            DataGridView.DataSource = null;
         }
     }
 }

@@ -47,16 +47,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label4.Location = new System.Drawing.Point(316, 479);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(316, 20);
+            this.label4.Size = new System.Drawing.Size(432, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "click đúp để hiện thông tin chi tiết sản phẩm";
             // 
             // dtgvTimsp
             // 
             this.dtgvTimsp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvTimsp.Location = new System.Drawing.Point(308, 340);
+            this.dtgvTimsp.Location = new System.Drawing.Point(304, 340);
             this.dtgvTimsp.Name = "dtgvTimsp";
             this.dtgvTimsp.RowHeadersWidth = 62;
             this.dtgvTimsp.Size = new System.Drawing.Size(686, 126);
@@ -65,7 +67,8 @@
             // 
             // buttltimlai
             // 
-            this.buttltimlai.Location = new System.Drawing.Point(594, 541);
+            this.buttltimlai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttltimlai.Location = new System.Drawing.Point(568, 541);
             this.buttltimlai.Name = "buttltimlai";
             this.buttltimlai.Size = new System.Drawing.Size(105, 40);
             this.buttltimlai.TabIndex = 10;
@@ -75,6 +78,7 @@
             // 
             // buttdong
             // 
+            this.buttdong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttdong.Location = new System.Drawing.Point(723, 541);
             this.buttdong.Name = "buttdong";
             this.buttdong.Size = new System.Drawing.Size(99, 40);
@@ -85,6 +89,7 @@
             // 
             // buttontimkie
             // 
+            this.buttontimkie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttontimkie.Location = new System.Drawing.Point(418, 541);
             this.buttontimkie.Name = "buttontimkie";
             this.buttontimkie.Size = new System.Drawing.Size(93, 40);
@@ -101,9 +106,9 @@
             this.groupBox1.Controls.Add(this.textBoxsoluong);
             this.groupBox1.Controls.Add(this.comboBoxmachatlieu);
             this.groupBox1.Controls.Add(this.comboBoxmaloai);
-            this.groupBox1.Location = new System.Drawing.Point(477, 122);
+            this.groupBox1.Location = new System.Drawing.Point(443, 95);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(345, 212);
+            this.groupBox1.Size = new System.Drawing.Size(379, 239);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm sản phẩm";
@@ -111,27 +116,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(7, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 20);
+            this.label3.Size = new System.Drawing.Size(118, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Mã chất liệu";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(29, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 20);
+            this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 4;
             this.label2.Text = "Số lượng";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(42, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.Size = new System.Drawing.Size(74, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Mã loại";
             // 
@@ -163,6 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1299, 704);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtgvTimsp);

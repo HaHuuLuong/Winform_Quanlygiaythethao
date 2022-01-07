@@ -84,9 +84,9 @@
             this.txtMatKhau.Location = new System.Drawing.Point(229, 191);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(134, 26);
             this.txtMatKhau.TabIndex = 13;
-            this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // label2
             // 

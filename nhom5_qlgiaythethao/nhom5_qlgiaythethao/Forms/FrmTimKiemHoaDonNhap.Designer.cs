@@ -251,6 +251,7 @@
             this.btntimlai.Text = "Tìm lại";
             this.btntimlai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btntimlai.UseVisualStyleBackColor = true;
+            this.btntimlai.Click += new System.EventHandler(this.btntimlai_Click);
             // 
             // btntimkiem
             // 
@@ -270,7 +271,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(50)))), ((int)(((byte)(170)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1102, 694);
             this.Controls.Add(this.txttongtien);
