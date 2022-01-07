@@ -374,7 +374,11 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\team 5 %283%29.png" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\5.jpg" />
     <None Include="Resources\Iconsmind-Outline-Monitor-Analytics.ico" />
     <None Include="Resources\Thêm tiêu đề phụ %283%29.png" />
   </ItemGroup>

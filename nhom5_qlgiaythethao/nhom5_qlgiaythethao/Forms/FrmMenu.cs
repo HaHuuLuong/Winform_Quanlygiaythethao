@@ -178,5 +178,26 @@ namespace nhom5_qlgiaythethao
             f.StartPosition = FormStartPosition.CenterScreen;
             f.Show();
         }
+        private int imageNumber = 1;
+        private void LoadNextImage()
+        {
+            if(imageNumber == 9)
+            {
+                imageNumber = 1;
+            }
+            picAnh.ImageLocation = String.Format(@"Change_img\{0}.jpg", imageNumber);
+            imageNumber++;
+
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            LoadNextImage();
+
+        }
+
+        private void picAnh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

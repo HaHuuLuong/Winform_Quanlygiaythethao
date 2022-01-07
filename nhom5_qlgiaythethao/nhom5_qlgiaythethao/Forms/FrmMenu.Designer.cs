@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuDanhmuc = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSanpham = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,12 +56,16 @@
             this.mnuThoat = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLogout = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.picAnh = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuDanhmuc,
@@ -223,28 +229,28 @@
             // mnuBCSanpham
             // 
             this.mnuBCSanpham.Name = "mnuBCSanpham";
-            this.mnuBCSanpham.Size = new System.Drawing.Size(270, 34);
+            this.mnuBCSanpham.Size = new System.Drawing.Size(229, 34);
             this.mnuBCSanpham.Text = "Sản phẩm";
             this.mnuBCSanpham.Click += new System.EventHandler(this.mnuBCSanpham_Click);
             // 
             // mnuBCHoadonnhap
             // 
             this.mnuBCHoadonnhap.Name = "mnuBCHoadonnhap";
-            this.mnuBCHoadonnhap.Size = new System.Drawing.Size(270, 34);
+            this.mnuBCHoadonnhap.Size = new System.Drawing.Size(229, 34);
             this.mnuBCHoadonnhap.Text = "Hoá đơn nhập";
             this.mnuBCHoadonnhap.Click += new System.EventHandler(this.mnuBCHoadonnhap_Click);
             // 
             // mnuBCDoanhthu
             // 
             this.mnuBCDoanhthu.Name = "mnuBCDoanhthu";
-            this.mnuBCDoanhthu.Size = new System.Drawing.Size(270, 34);
+            this.mnuBCDoanhthu.Size = new System.Drawing.Size(229, 34);
             this.mnuBCDoanhthu.Text = "Doanh thu";
             this.mnuBCDoanhthu.Click += new System.EventHandler(this.mnuBCDoanhthu_Click);
             // 
             // mnuBCHoadonban
             // 
             this.mnuBCHoadonban.Name = "mnuBCHoadonban";
-            this.mnuBCHoadonban.Size = new System.Drawing.Size(270, 34);
+            this.mnuBCHoadonban.Size = new System.Drawing.Size(229, 34);
             this.mnuBCHoadonban.Text = "Hoá đơn bán";
             this.mnuBCHoadonban.Click += new System.EventHandler(this.mnuBCHoadonban_Click);
             // 
@@ -270,19 +276,48 @@
             this.mnuLogout.Text = "Đăng Xuất";
             this.mnuLogout.Click += new System.EventHandler(this.mnuLogout_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.picAnh);
+            this.panel1.Location = new System.Drawing.Point(0, 36);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1126, 625);
+            this.panel1.TabIndex = 2;
+            // 
+            // picAnh
+            // 
+            this.picAnh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picAnh.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picAnh.ErrorImage")));
+            this.picAnh.Image = ((System.Drawing.Image)(resources.GetObject("picAnh.Image")));
+            this.picAnh.Location = new System.Drawing.Point(0, 0);
+            this.picAnh.Name = "picAnh";
+            this.picAnh.Size = new System.Drawing.Size(1126, 625);
+            this.picAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAnh.TabIndex = 0;
+            this.picAnh.TabStop = false;
+            this.picAnh.Click += new System.EventHandler(this.picAnh_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 2000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::nhom5_qlgiaythethao.Properties.Resources.thiet_ke_cua_hang_giay_the_thao_dep;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1126, 661);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "FrmMenu";
             this.Text = "Quản lý cửa hàng giày thể thao";
             this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picAnh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,6 +350,9 @@
         private System.Windows.Forms.ToolStripMenuItem mnuThoat;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuLogout;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox picAnh;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

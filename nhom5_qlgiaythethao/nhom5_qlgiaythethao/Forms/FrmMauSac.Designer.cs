@@ -47,12 +47,12 @@
             // DataGridView
             // 
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(329, 259);
+            this.DataGridView.Location = new System.Drawing.Point(269, 269);
             this.DataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
             this.DataGridView.RowTemplate.Height = 24;
-            this.DataGridView.Size = new System.Drawing.Size(358, 205);
+            this.DataGridView.Size = new System.Drawing.Size(465, 205);
             this.DataGridView.TabIndex = 55;
             this.DataGridView.Click += new System.EventHandler(this.DataGridView_Click);
             // 
