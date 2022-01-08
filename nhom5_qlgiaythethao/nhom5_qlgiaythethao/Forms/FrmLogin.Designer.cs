@@ -167,9 +167,9 @@
             // lblText
             // 
             this.lblText.AutoSize = true;
-            this.lblText.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblText.BackColor = System.Drawing.Color.Navy;
             this.lblText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblText.ForeColor = System.Drawing.Color.White;
             this.lblText.Location = new System.Drawing.Point(18, 9);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(550, 32);
@@ -178,7 +178,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel2.BackColor = System.Drawing.Color.Navy;
             this.panel2.Controls.Add(this.lblText);
             this.panel2.Location = new System.Drawing.Point(171, 160);
             this.panel2.Name = "panel2";

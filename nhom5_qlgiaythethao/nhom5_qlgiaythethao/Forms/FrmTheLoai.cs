@@ -23,8 +23,14 @@ namespace nhom5_qlgiaythethao.Forms
             btnLuu.Enabled = false;
             btnBoqua.Enabled = false;
             Load_Dgrid();
-        }
 
+            // Chạy animation Slogan
+            text = lblText.Text;
+            lblText.Text = "";
+            timer1.Start();
+        }
+        private string text;
+        private int len = 0;
         private void Load_Dgrid()
         {
             string sql;
@@ -180,6 +186,17 @@ namespace nhom5_qlgiaythethao.Forms
         private void btnDong_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (len < text.Length)
+            {
+                lblText.Text = lblText.Text + text.ElementAt(len);
+                len++;
+            }
+            else
+                timer1.Stop();
         }
     }
 }

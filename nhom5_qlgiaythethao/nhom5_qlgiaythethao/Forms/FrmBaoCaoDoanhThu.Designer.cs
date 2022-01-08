@@ -48,41 +48,53 @@
             // 
             // buttonhienthij
             // 
-            this.buttonhienthij.Location = new System.Drawing.Point(444, 514);
+            this.buttonhienthij.Image = global::nhom5_qlgiaythethao.Properties.Resources.Iconsmind_Outline_Monitor_Analytics;
+            this.buttonhienthij.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonhienthij.Location = new System.Drawing.Point(419, 514);
             this.buttonhienthij.Name = "buttonhienthij";
-            this.buttonhienthij.Size = new System.Drawing.Size(88, 36);
+            this.buttonhienthij.Size = new System.Drawing.Size(117, 51);
             this.buttonhienthij.TabIndex = 19;
             this.buttonhienthij.Text = "Hiển thị";
+            this.buttonhienthij.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonhienthij.UseVisualStyleBackColor = true;
             this.buttonhienthij.Click += new System.EventHandler(this.buttonhienthij_Click);
             // 
             // buttontimlai
             // 
-            this.buttontimlai.Location = new System.Drawing.Point(562, 514);
+            this.buttontimlai.Image = global::nhom5_qlgiaythethao.Properties.Resources.Icojam_Blue_Bits_Application_search;
+            this.buttontimlai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttontimlai.Location = new System.Drawing.Point(554, 514);
             this.buttontimlai.Name = "buttontimlai";
-            this.buttontimlai.Size = new System.Drawing.Size(99, 36);
+            this.buttontimlai.Size = new System.Drawing.Size(122, 51);
             this.buttontimlai.TabIndex = 18;
             this.buttontimlai.Text = "Tìm lại";
+            this.buttontimlai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttontimlai.UseVisualStyleBackColor = true;
             this.buttontimlai.Click += new System.EventHandler(this.buttontimlai_Click);
             // 
             // buttlinbaocao
             // 
-            this.buttlinbaocao.Location = new System.Drawing.Point(691, 514);
+            this.buttlinbaocao.Image = global::nhom5_qlgiaythethao.Properties.Resources.Aha_Soft_Universal_Shop_Print1;
+            this.buttlinbaocao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttlinbaocao.Location = new System.Drawing.Point(701, 514);
             this.buttlinbaocao.Name = "buttlinbaocao";
-            this.buttlinbaocao.Size = new System.Drawing.Size(96, 36);
+            this.buttlinbaocao.Size = new System.Drawing.Size(137, 51);
             this.buttlinbaocao.TabIndex = 17;
             this.buttlinbaocao.Text = "In báo cáo";
+            this.buttlinbaocao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttlinbaocao.UseVisualStyleBackColor = true;
             this.buttlinbaocao.Click += new System.EventHandler(this.buttlinbaocao_Click);
             // 
             // buttondong
             // 
-            this.buttondong.Location = new System.Drawing.Point(817, 514);
+            this.buttondong.Image = global::nhom5_qlgiaythethao.Properties.Resources.Hopstarter_Soft_Scraps_File_Delete;
+            this.buttondong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttondong.Location = new System.Drawing.Point(862, 514);
             this.buttondong.Name = "buttondong";
-            this.buttondong.Size = new System.Drawing.Size(91, 36);
+            this.buttondong.Size = new System.Drawing.Size(122, 51);
             this.buttondong.TabIndex = 16;
             this.buttondong.Text = "Đóng";
+            this.buttondong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttondong.UseVisualStyleBackColor = true;
             this.buttondong.Click += new System.EventHandler(this.buttondong_Click);
             // 
@@ -105,11 +117,14 @@
             // 
             // buttonbatdau
             // 
-            this.buttonbatdau.Location = new System.Drawing.Point(317, 514);
+            this.buttonbatdau.Image = global::nhom5_qlgiaythethao.Properties.Resources.Hopstarter_Sleek_Xp_Basic_Folder_Open;
+            this.buttonbatdau.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonbatdau.Location = new System.Drawing.Point(270, 512);
             this.buttonbatdau.Name = "buttonbatdau";
-            this.buttonbatdau.Size = new System.Drawing.Size(86, 36);
+            this.buttonbatdau.Size = new System.Drawing.Size(126, 53);
             this.buttonbatdau.TabIndex = 13;
             this.buttonbatdau.Text = "Bắt đầu";
+            this.buttonbatdau.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonbatdau.UseVisualStyleBackColor = true;
             this.buttonbatdau.Click += new System.EventHandler(this.buttonbatdau_Click);
             // 
@@ -129,7 +144,7 @@
             this.dtgvbcdt.Location = new System.Drawing.Point(292, 247);
             this.dtgvbcdt.Name = "dtgvbcdt";
             this.dtgvbcdt.RowHeadersWidth = 62;
-            this.dtgvbcdt.Size = new System.Drawing.Size(642, 185);
+            this.dtgvbcdt.Size = new System.Drawing.Size(664, 185);
             this.dtgvbcdt.TabIndex = 11;
             this.dtgvbcdt.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvbcdt_CellDoubleClick);
             // 
@@ -139,9 +154,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxthang);
             this.groupBox1.Controls.Add(this.comboBoxmanhanvien);
-            this.groupBox1.Location = new System.Drawing.Point(403, 49);
+            this.groupBox1.Location = new System.Drawing.Point(397, 40);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(477, 176);
+            this.groupBox1.Size = new System.Drawing.Size(483, 185);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";

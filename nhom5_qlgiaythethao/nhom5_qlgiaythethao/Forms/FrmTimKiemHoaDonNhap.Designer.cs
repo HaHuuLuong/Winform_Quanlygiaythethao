@@ -227,6 +227,7 @@
             // 
             // btnthoat
             // 
+            this.btnthoat.BackColor = System.Drawing.Color.Red;
             this.btnthoat.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Flatastic_9_Login;
             this.btnthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthoat.Location = new System.Drawing.Point(686, 596);
@@ -236,11 +237,12 @@
             this.btnthoat.TabIndex = 25;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.UseVisualStyleBackColor = false;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // btntimlai
             // 
+            this.btntimlai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btntimlai.Image = global::nhom5_qlgiaythethao.Properties.Resources.Ahmadhania_Spherical_Redo;
             this.btntimlai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntimlai.Location = new System.Drawing.Point(497, 596);
@@ -250,11 +252,12 @@
             this.btntimlai.TabIndex = 24;
             this.btntimlai.Text = "Tìm lại";
             this.btntimlai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btntimlai.UseVisualStyleBackColor = true;
+            this.btntimlai.UseVisualStyleBackColor = false;
             this.btntimlai.Click += new System.EventHandler(this.btntimlai_Click);
             // 
             // btntimkiem
             // 
+            this.btntimkiem.BackColor = System.Drawing.Color.Lime;
             this.btntimkiem.Image = global::nhom5_qlgiaythethao.Properties.Resources.Icojam_Blue_Bits_Application_search;
             this.btntimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntimkiem.Location = new System.Drawing.Point(276, 596);
@@ -264,7 +267,7 @@
             this.btntimkiem.TabIndex = 23;
             this.btntimkiem.Text = "Tìm kiếm";
             this.btntimkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btntimkiem.UseVisualStyleBackColor = true;
+            this.btntimkiem.UseVisualStyleBackColor = false;
             this.btntimkiem.Click += new System.EventHandler(this.btntimkiem_Click);
             // 
             // FrmTimKiemHoaDonNhap

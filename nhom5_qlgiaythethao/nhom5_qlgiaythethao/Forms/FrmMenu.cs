@@ -181,7 +181,7 @@ namespace nhom5_qlgiaythethao
         private int imageNumber = 1;
         private void LoadNextImage()
         {
-            if(imageNumber == 7)
+            if(imageNumber == 9)
             {
                 imageNumber = 1;
             }
@@ -196,6 +196,11 @@ namespace nhom5_qlgiaythethao
         }
 
         private void picAnh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

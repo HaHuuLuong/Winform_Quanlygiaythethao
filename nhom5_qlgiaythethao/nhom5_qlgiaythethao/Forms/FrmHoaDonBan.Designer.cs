@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupSp = new System.Windows.Forms.GroupBox();
+            this.btnin = new System.Windows.Forms.Button();
             this.btntimkiem = new System.Windows.Forms.Button();
             this.cbomahoadonban = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -79,6 +80,7 @@
             // groupSp
             // 
             this.groupSp.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.groupSp.Controls.Add(this.btnin);
             this.groupSp.Controls.Add(this.btntimkiem);
             this.groupSp.Controls.Add(this.cbomahoadonban);
             this.groupSp.Controls.Add(this.label17);
@@ -114,6 +116,21 @@
             this.groupSp.TabStop = false;
             this.groupSp.Text = "Thông tin các sản phẩm";
             this.groupSp.Enter += new System.EventHandler(this.groupSp_Enter);
+            // 
+            // btnin
+            // 
+            this.btnin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnin.Image = global::nhom5_qlgiaythethao.Properties.Resources.Aha_Soft_Universal_Shop_Print;
+            this.btnin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnin.Location = new System.Drawing.Point(333, 393);
+            this.btnin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnin.Name = "btnin";
+            this.btnin.Size = new System.Drawing.Size(172, 51);
+            this.btnin.TabIndex = 18;
+            this.btnin.Text = "Xuất Hóa đơn";
+            this.btnin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnin.UseVisualStyleBackColor = false;
+            this.btnin.Click += new System.EventHandler(this.btnin_Click);
             // 
             // btntimkiem
             // 
@@ -152,23 +169,24 @@
             // 
             // btnboqua
             // 
+            this.btnboqua.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnboqua.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Pretty_Office_8_Skip_forward;
             this.btnboqua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnboqua.Location = new System.Drawing.Point(643, 393);
+            this.btnboqua.Location = new System.Drawing.Point(658, 393);
             this.btnboqua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnboqua.Name = "btnboqua";
             this.btnboqua.Size = new System.Drawing.Size(149, 51);
             this.btnboqua.TabIndex = 29;
             this.btnboqua.Text = "Bỏ qua";
             this.btnboqua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnboqua.UseVisualStyleBackColor = true;
+            this.btnboqua.UseVisualStyleBackColor = false;
             this.btnboqua.Click += new System.EventHandler(this.btnboqua_Click);
             // 
             // btnsua
             // 
             this.btnsua.Image = global::nhom5_qlgiaythethao.Properties.Resources.Bokehlicia_Captiva_Edit_tomboy;
             this.btnsua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsua.Location = new System.Drawing.Point(478, 393);
+            this.btnsua.Location = new System.Drawing.Point(530, 393);
             this.btnsua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(97, 51);
@@ -185,7 +203,7 @@
             this.btndong.Location = new System.Drawing.Point(1022, 393);
             this.btndong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btndong.Name = "btndong";
-            this.btndong.Size = new System.Drawing.Size(122, 49);
+            this.btndong.Size = new System.Drawing.Size(124, 51);
             this.btndong.TabIndex = 27;
             this.btndong.Text = "Đóng";
             this.btndong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -194,6 +212,7 @@
             // 
             // btnhuy
             // 
+            this.btnhuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnhuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhuy.Image = global::nhom5_qlgiaythethao.Properties.Resources.Hopstarter_Soft_Scraps_File_Delete;
             this.btnhuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -204,35 +223,37 @@
             this.btnhuy.TabIndex = 26;
             this.btnhuy.Text = "Hủy hóa đơn";
             this.btnhuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnhuy.UseVisualStyleBackColor = true;
+            this.btnhuy.UseVisualStyleBackColor = false;
             this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // btnluu
             // 
+            this.btnluu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnluu.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Pretty_Office_7_Save;
             this.btnluu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnluu.Location = new System.Drawing.Point(324, 393);
+            this.btnluu.Location = new System.Drawing.Point(208, 393);
             this.btnluu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnluu.Name = "btnluu";
-            this.btnluu.Size = new System.Drawing.Size(96, 51);
+            this.btnluu.Size = new System.Drawing.Size(111, 51);
             this.btnluu.TabIndex = 25;
             this.btnluu.Text = "Lưu";
             this.btnluu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnluu.UseVisualStyleBackColor = true;
+            this.btnluu.UseVisualStyleBackColor = false;
             this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
             // 
             // btnthemmoi
             // 
+            this.btnthemmoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnthemmoi.Image = global::nhom5_qlgiaythethao.Properties.Resources.Hopstarter_Soft_Scraps_Folder_Add1;
             this.btnthemmoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnthemmoi.Location = new System.Drawing.Point(88, 393);
+            this.btnthemmoi.Location = new System.Drawing.Point(24, 393);
             this.btnthemmoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnthemmoi.Name = "btnthemmoi";
             this.btnthemmoi.Size = new System.Drawing.Size(171, 51);
             this.btnthemmoi.TabIndex = 24;
             this.btnthemmoi.Text = "Thêm hóa đơn";
             this.btnthemmoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnthemmoi.UseVisualStyleBackColor = true;
+            this.btnthemmoi.UseVisualStyleBackColor = false;
             this.btnthemmoi.Click += new System.EventHandler(this.btnthemmoi_Click);
             // 
             // DataGridView
@@ -313,8 +334,9 @@
             // lblbangchu
             // 
             this.lblbangchu.AutoSize = true;
-            this.lblbangchu.ForeColor = System.Drawing.Color.Black;
-            this.lblbangchu.Location = new System.Drawing.Point(161, 365);
+            this.lblbangchu.BackColor = System.Drawing.Color.MidnightBlue;
+            this.lblbangchu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblbangchu.Location = new System.Drawing.Point(118, 369);
             this.lblbangchu.Name = "lblbangchu";
             this.lblbangchu.Size = new System.Drawing.Size(77, 20);
             this.lblbangchu.TabIndex = 8;
@@ -528,14 +550,14 @@
             // lblText
             // 
             this.lblText.AutoSize = true;
-            this.lblText.BackColor = System.Drawing.Color.Lavender;
+            this.lblText.BackColor = System.Drawing.Color.Navy;
             this.lblText.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblText.Location = new System.Drawing.Point(428, -11);
+            this.lblText.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblText.Location = new System.Drawing.Point(352, -6);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(373, 55);
+            this.lblText.Size = new System.Drawing.Size(539, 55);
             this.lblText.TabIndex = 3;
-            this.lblText.Text = "Hóa đơn bán hàng";
+            this.lblText.Text = "Hóa đơn bán hàng We Run";
             // 
             // timer1
             // 
@@ -608,5 +630,6 @@
         private System.Windows.Forms.ComboBox cbomahoadonban;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnin;
     }
 }

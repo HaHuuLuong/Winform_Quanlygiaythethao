@@ -227,9 +227,9 @@
             // lblbangchu
             // 
             this.lblbangchu.AutoSize = true;
-            this.lblbangchu.BackColor = System.Drawing.Color.Honeydew;
+            this.lblbangchu.BackColor = System.Drawing.Color.MidnightBlue;
             this.lblbangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbangchu.ForeColor = System.Drawing.Color.Orange;
+            this.lblbangchu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblbangchu.Location = new System.Drawing.Point(115, 533);
             this.lblbangchu.Name = "lblbangchu";
             this.lblbangchu.Size = new System.Drawing.Size(94, 22);

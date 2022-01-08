@@ -198,6 +198,7 @@ namespace nhom5_qlgiaythethao.Forms
             giamoi = Convert.ToDouble(txtdongia.Text);
             sql = " UPDATE tblSanPham SET GiaNhap =" + giamoi + " WHERE MaSanPham = N'" + cbomasp.Text + "'";
             Functions.RunSql(sql);
+            // Giá Bán = 110% giá nhập
             giaban = Convert.ToDouble(txtdongia.Text) * 1.1;
             sql = " UPDATE tblSanPham SET GiaBan =" + giaban + " WHERE MaSanPham = N'" + cbomasp.Text + "'";
             Functions.RunSql(sql);

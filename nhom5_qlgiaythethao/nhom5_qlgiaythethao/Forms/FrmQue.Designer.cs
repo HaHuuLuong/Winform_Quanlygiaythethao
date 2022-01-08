@@ -58,63 +58,70 @@
             // 
             // btnboqua
             // 
+            this.btnboqua.BackColor = System.Drawing.SystemColors.Info;
             this.btnboqua.Location = new System.Drawing.Point(684, 195);
             this.btnboqua.Name = "btnboqua";
             this.btnboqua.Size = new System.Drawing.Size(87, 53);
             this.btnboqua.TabIndex = 19;
             this.btnboqua.Text = "Bỏ qua";
-            this.btnboqua.UseVisualStyleBackColor = true;
+            this.btnboqua.UseVisualStyleBackColor = false;
             this.btnboqua.Click += new System.EventHandler(this.btnboqua_Click);
             // 
             // btnluu
             // 
+            this.btnluu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnluu.Location = new System.Drawing.Point(684, 268);
             this.btnluu.Name = "btnluu";
             this.btnluu.Size = new System.Drawing.Size(87, 51);
             this.btnluu.TabIndex = 18;
             this.btnluu.Text = "Lưu";
-            this.btnluu.UseVisualStyleBackColor = true;
+            this.btnluu.UseVisualStyleBackColor = false;
             this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
             // 
             // btndong
             // 
+            this.btndong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btndong.Location = new System.Drawing.Point(684, 334);
             this.btndong.Name = "btndong";
             this.btndong.Size = new System.Drawing.Size(87, 58);
             this.btndong.TabIndex = 17;
             this.btndong.Text = "Đóng";
-            this.btndong.UseVisualStyleBackColor = true;
+            this.btndong.UseVisualStyleBackColor = false;
             this.btndong.Click += new System.EventHandler(this.btndong_Click);
             // 
             // btnxoa
             // 
+            this.btnxoa.BackColor = System.Drawing.Color.Red;
             this.btnxoa.Location = new System.Drawing.Point(564, 334);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(97, 58);
             this.btnxoa.TabIndex = 16;
             this.btnxoa.Text = "Xoá";
-            this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.UseVisualStyleBackColor = false;
             this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnsua
             // 
+            this.btnsua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnsua.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnsua.Location = new System.Drawing.Point(564, 268);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(97, 51);
             this.btnsua.TabIndex = 15;
             this.btnsua.Text = "Sửa";
-            this.btnsua.UseVisualStyleBackColor = true;
+            this.btnsua.UseVisualStyleBackColor = false;
             this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // btnthem
             // 
+            this.btnthem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnthem.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnthem.Location = new System.Drawing.Point(571, 195);
+            this.btnthem.Location = new System.Drawing.Point(564, 195);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(90, 53);
             this.btnthem.TabIndex = 14;
             this.btnthem.Text = "Thêm";
-            this.btnthem.UseVisualStyleBackColor = true;
+            this.btnthem.UseVisualStyleBackColor = false;
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // dataGridView
@@ -132,7 +139,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(211, 164);
+            this.label2.Location = new System.Drawing.Point(208, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 25);
             this.label2.TabIndex = 12;
@@ -142,7 +149,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(216, 95);
+            this.label1.Location = new System.Drawing.Point(208, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 25);
             this.label1.TabIndex = 11;

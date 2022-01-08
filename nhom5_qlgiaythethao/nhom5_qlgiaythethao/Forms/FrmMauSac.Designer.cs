@@ -194,7 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.OrangeRed;
+            this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(1035, 622);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnBoqua);

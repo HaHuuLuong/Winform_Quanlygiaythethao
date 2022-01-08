@@ -33,6 +33,8 @@ namespace nhom5_qlgiaythethao.Forms
         {
             string user = "We Run";
             string pass = "yeu co Tu";
+            
+            //Kiểm tra ràng buộc
 
             if (txtTenDangNhap.Text.Length == 0 && txtMatKhau.Text.Length == 0)
             {
@@ -64,7 +66,7 @@ namespace nhom5_qlgiaythethao.Forms
                     Properties.Settings.Default.Save();
                 }
                 this.Hide();              
-                FrmMenu f = new FrmMenu();
+                FrmMenu f = new FrmMenu(); // Hiện chương trình chính
                 f.StartPosition = FormStartPosition.CenterScreen;
                 f.Show();
             }
@@ -97,12 +99,12 @@ namespace nhom5_qlgiaythethao.Forms
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(len < text.Length)
+            if (len < text.Length)
             {
                 lblText.Text = lblText.Text + text.ElementAt(len);
                 len++;
             }    
-            else
+           else
                 timer1.Stop();
         }
     }

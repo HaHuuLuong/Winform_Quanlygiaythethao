@@ -58,7 +58,7 @@
             // dtgvTimsp
             // 
             this.dtgvTimsp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvTimsp.Location = new System.Drawing.Point(304, 340);
+            this.dtgvTimsp.Location = new System.Drawing.Point(321, 350);
             this.dtgvTimsp.Name = "dtgvTimsp";
             this.dtgvTimsp.RowHeadersWidth = 62;
             this.dtgvTimsp.Size = new System.Drawing.Size(686, 126);
@@ -67,49 +67,65 @@
             // 
             // buttltimlai
             // 
+            this.buttltimlai.BackColor = System.Drawing.Color.Blue;
             this.buttltimlai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttltimlai.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttltimlai.Image = global::nhom5_qlgiaythethao.Properties.Resources.Ahmadhania_Spherical_Redo;
+            this.buttltimlai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttltimlai.Location = new System.Drawing.Point(568, 541);
             this.buttltimlai.Name = "buttltimlai";
-            this.buttltimlai.Size = new System.Drawing.Size(105, 40);
+            this.buttltimlai.Size = new System.Drawing.Size(121, 54);
             this.buttltimlai.TabIndex = 10;
             this.buttltimlai.Text = "Tìm lại";
-            this.buttltimlai.UseVisualStyleBackColor = true;
+            this.buttltimlai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttltimlai.UseVisualStyleBackColor = false;
             this.buttltimlai.Click += new System.EventHandler(this.buttltimlai_Click);
             // 
             // buttdong
             // 
+            this.buttdong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.buttdong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttdong.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttdong.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Flatastic_9_Login;
+            this.buttdong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttdong.Location = new System.Drawing.Point(723, 541);
             this.buttdong.Name = "buttdong";
-            this.buttdong.Size = new System.Drawing.Size(99, 40);
+            this.buttdong.Size = new System.Drawing.Size(126, 54);
             this.buttdong.TabIndex = 9;
             this.buttdong.Text = "Đóng";
-            this.buttdong.UseVisualStyleBackColor = true;
+            this.buttdong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttdong.UseVisualStyleBackColor = false;
             this.buttdong.Click += new System.EventHandler(this.buttdong_Click);
             // 
             // buttontimkie
             // 
+            this.buttontimkie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttontimkie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttontimkie.Location = new System.Drawing.Point(418, 541);
+            this.buttontimkie.Image = global::nhom5_qlgiaythethao.Properties.Resources.Icojam_Blue_Bits_Application_search;
+            this.buttontimkie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttontimkie.Location = new System.Drawing.Point(397, 541);
             this.buttontimkie.Name = "buttontimkie";
-            this.buttontimkie.Size = new System.Drawing.Size(93, 40);
+            this.buttontimkie.Size = new System.Drawing.Size(141, 54);
             this.buttontimkie.TabIndex = 8;
             this.buttontimkie.Text = "Tìm kiếm";
-            this.buttontimkie.UseVisualStyleBackColor = true;
+            this.buttontimkie.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttontimkie.UseVisualStyleBackColor = false;
             this.buttontimkie.Click += new System.EventHandler(this.buttontimkie_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(20)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxsoluong);
             this.groupBox1.Controls.Add(this.comboBoxmachatlieu);
             this.groupBox1.Controls.Add(this.comboBoxmaloai);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(443, 95);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(379, 239);
+            this.groupBox1.Size = new System.Drawing.Size(439, 239);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm sản phẩm";
@@ -118,7 +134,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 68);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(72, 91);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 22);
             this.label3.TabIndex = 5;
@@ -128,7 +145,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 103);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(92, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 4;
@@ -138,7 +156,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 32);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(92, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 22);
             this.label1.TabIndex = 3;
@@ -146,26 +165,26 @@
             // 
             // textBoxsoluong
             // 
-            this.textBoxsoluong.Location = new System.Drawing.Point(150, 103);
+            this.textBoxsoluong.Location = new System.Drawing.Point(215, 137);
             this.textBoxsoluong.Name = "textBoxsoluong";
-            this.textBoxsoluong.Size = new System.Drawing.Size(121, 26);
+            this.textBoxsoluong.Size = new System.Drawing.Size(121, 35);
             this.textBoxsoluong.TabIndex = 2;
             this.textBoxsoluong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxsoluong_KeyPress);
             // 
             // comboBoxmachatlieu
             // 
             this.comboBoxmachatlieu.FormattingEnabled = true;
-            this.comboBoxmachatlieu.Location = new System.Drawing.Point(150, 68);
+            this.comboBoxmachatlieu.Location = new System.Drawing.Point(215, 91);
             this.comboBoxmachatlieu.Name = "comboBoxmachatlieu";
-            this.comboBoxmachatlieu.Size = new System.Drawing.Size(121, 28);
+            this.comboBoxmachatlieu.Size = new System.Drawing.Size(121, 37);
             this.comboBoxmachatlieu.TabIndex = 1;
             // 
             // comboBoxmaloai
             // 
             this.comboBoxmaloai.FormattingEnabled = true;
-            this.comboBoxmaloai.Location = new System.Drawing.Point(150, 29);
+            this.comboBoxmaloai.Location = new System.Drawing.Point(215, 48);
             this.comboBoxmaloai.Name = "comboBoxmaloai";
-            this.comboBoxmaloai.Size = new System.Drawing.Size(121, 28);
+            this.comboBoxmaloai.Size = new System.Drawing.Size(121, 37);
             this.comboBoxmaloai.TabIndex = 0;
             // 
             // FrmTimKiemSanPham

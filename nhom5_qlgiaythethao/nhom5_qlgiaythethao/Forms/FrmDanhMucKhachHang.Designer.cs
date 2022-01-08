@@ -89,61 +89,79 @@
             // 
             // btndong
             // 
-            this.btndong.Location = new System.Drawing.Point(719, 450);
+            this.btndong.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Flatastic_9_Login;
+            this.btndong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndong.Location = new System.Drawing.Point(743, 450);
             this.btndong.Name = "btndong";
-            this.btndong.Size = new System.Drawing.Size(79, 36);
+            this.btndong.Size = new System.Drawing.Size(104, 45);
             this.btndong.TabIndex = 27;
             this.btndong.Text = "Đóng";
+            this.btndong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndong.UseVisualStyleBackColor = true;
             this.btndong.Click += new System.EventHandler(this.btndong_Click);
             // 
             // btnboqua
             // 
+            this.btnboqua.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Pretty_Office_8_Skip_forward;
+            this.btnboqua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnboqua.Location = new System.Drawing.Point(605, 450);
             this.btnboqua.Name = "btnboqua";
-            this.btnboqua.Size = new System.Drawing.Size(79, 36);
+            this.btnboqua.Size = new System.Drawing.Size(114, 45);
             this.btnboqua.TabIndex = 26;
             this.btnboqua.Text = "Bỏ qua";
+            this.btnboqua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnboqua.UseVisualStyleBackColor = true;
             this.btnboqua.Click += new System.EventHandler(this.btnboqua_Click);
             // 
             // btnluu
             // 
+            this.btnluu.Image = global::nhom5_qlgiaythethao.Properties.Resources.Custom_Icon_Design_Pretty_Office_7_Save;
+            this.btnluu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnluu.Location = new System.Drawing.Point(489, 450);
             this.btnluu.Name = "btnluu";
-            this.btnluu.Size = new System.Drawing.Size(79, 36);
+            this.btnluu.Size = new System.Drawing.Size(90, 45);
             this.btnluu.TabIndex = 25;
             this.btnluu.Text = "Lưu";
+            this.btnluu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnluu.UseVisualStyleBackColor = true;
             this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
             // 
             // btnxoa
             // 
+            this.btnxoa.Image = global::nhom5_qlgiaythethao.Properties.Resources.Hopstarter_Soft_Scraps_File_Delete;
+            this.btnxoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnxoa.Location = new System.Drawing.Point(372, 450);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(79, 36);
+            this.btnxoa.Size = new System.Drawing.Size(100, 45);
             this.btnxoa.TabIndex = 24;
             this.btnxoa.Text = "Xoá";
+            this.btnxoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnxoa.UseVisualStyleBackColor = true;
             this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnsua
             // 
+            this.btnsua.Image = global::nhom5_qlgiaythethao.Properties.Resources.Bokehlicia_Captiva_Edit_tomboy1;
+            this.btnsua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsua.Location = new System.Drawing.Point(254, 450);
             this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(79, 36);
+            this.btnsua.Size = new System.Drawing.Size(93, 45);
             this.btnsua.TabIndex = 23;
             this.btnsua.Text = "Sửa";
+            this.btnsua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsua.UseVisualStyleBackColor = true;
             this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // btnthem
             // 
+            this.btnthem.Image = global::nhom5_qlgiaythethao.Properties.Resources.Hopstarter_Soft_Scraps_Folder_Add;
+            this.btnthem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthem.Location = new System.Drawing.Point(134, 450);
             this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(79, 36);
+            this.btnthem.Size = new System.Drawing.Size(99, 45);
             this.btnthem.TabIndex = 22;
             this.btnthem.Text = "Thêm";
+            this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthem.UseVisualStyleBackColor = true;
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
@@ -198,6 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(932, 561);
             this.Controls.Add(this.msksđt);
             this.Controls.Add(this.dataGridView);
