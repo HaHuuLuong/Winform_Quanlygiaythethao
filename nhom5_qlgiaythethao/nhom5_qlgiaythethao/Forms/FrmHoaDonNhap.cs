@@ -76,11 +76,12 @@ namespace nhom5_qlgiaythethao.Forms
 
         private void Load_DataGridView()
         {
-            string sql;
+            string sql;//?
             sql = "SELECT tblChiTietHoaDonNhap.MaHoaDonNhap, tblChiTietHoaDonNhap.MaSanPham, tblSanPham.TenSanPham, tblChiTietHoaDonNhap.SoLuong," +
                 " tblChiTietHoaDonNhap.DonGia, tblChiTietHoaDonNhap.KhuyenMai, tblChiTietHoaDonNhap.ThanhTien " +
                "FROM tblChiTietHoaDonNhap JOIN tblSanPham " +
-               "ON tblChiTietHoaDonNhap.MaSanPham=tblSanPham.MaSanPham where tblChiTietHoaDonNhap.MaHoaDonNhap = N'" + txtmahdnhap.Text + "'";
+               "ON tblChiTietHoaDonNhap.MaSanPham=tblSanPham.MaSanPham ";//where tblChiTietHoaDonNhap.MaHoaDonNhap = N'" + txtmahdnhap.Text + "'
+
             tblhdnhap = Functions.GetDataToTable(sql);
             DataGridView.DataSource = tblhdnhap;
             DataGridView.Columns[0].HeaderText = "Mã hóa đơn nhập";
@@ -203,7 +204,7 @@ namespace nhom5_qlgiaythethao.Forms
             // Cập nhật lại tổng tiền cho hóa đơn nhap
             double tong, tongmoi;
             tong = Convert.ToDouble(Functions.GetFieldValues("SELECT TongTien FROM tblHoaDonNhap WHERE MaHoadonNhap = N'" + txtmahdnhap.Text + "'"));
-            tongmoi = tong + Convert.ToDouble(txtthanhtien.Text);
+            tongmoi = tong + Convert.ToDouble(txtthanhtien.Text);//?
             sql = "UPDATE tblHoaDonNhap SET TongTien =" + tongmoi + " WHERE MaHoaDonNhap = N'" + txtmahdnhap.Text + "'";
             Functions.RunSql(sql);
             txttongtien.Text = tongmoi.ToString();

@@ -181,7 +181,7 @@ namespace nhom5_qlgiaythethao
         private int imageNumber = 1;
         private void LoadNextImage()
         {
-            if(imageNumber == 9)
+            if(imageNumber == 7)
             {
                 imageNumber = 1;
             }

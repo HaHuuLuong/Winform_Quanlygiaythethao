@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txttongtien = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbbangchu = new System.Windows.Forms.Label();
@@ -38,7 +39,11 @@
             this.btnin = new System.Windows.Forms.Button();
             this.btntimlai = new System.Windows.Forms.Button();
             this.btntimkiem = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblText = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgbchdnhap)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txttongtien
@@ -147,12 +152,40 @@
             this.btntimkiem.UseVisualStyleBackColor = true;
             this.btntimkiem.Click += new System.EventHandler(this.btntimkiem_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.lblText);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(201, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(567, 82);
+            this.panel1.TabIndex = 27;
+            // 
+            // lblText
+            // 
+            this.lblText.AutoSize = true;
+            this.lblText.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.Location = new System.Drawing.Point(53, 0);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(470, 50);
+            this.lblText.TabIndex = 28;
+            this.lblText.Text = "Báo cáo hóa đơn nhập";
+            this.lblText.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmBaoCaoHoaDonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(982, 643);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btndong);
             this.Controls.Add(this.btnin);
             this.Controls.Add(this.btntimlai);
@@ -167,6 +200,8 @@
             this.Text = "FrmBaoCaoHoaDonNhap";
             this.Load += new System.EventHandler(this.FrmBaoCaoHoaDonNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgbchdnhap)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +219,8 @@
         private System.Windows.Forms.Button btnin;
         private System.Windows.Forms.Button btntimlai;
         private System.Windows.Forms.Button btntimkiem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblText;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -31,7 +31,14 @@ namespace nhom5_qlgiaythethao.Forms
             Class.Functions.FillCombo("select MaNhaCungCap,TenNhaCungCap from tblNhaCungCap", cbonhacc, "MaNhaCungCap", "TenNhaCungCap");
             cbonhacc.SelectedIndex = -1;
             Load_dghoadonnhap();
+            //
+            // Chạy animation Slogan
+            text = lblText.Text;
+            lblText.Text = "";
+            timer1.Start();
         }
+        private string text;
+        private int len = 0;
         private void resetvalues()
         {
             txttongtien.Text = "";
@@ -184,7 +191,7 @@ namespace nhom5_qlgiaythethao.Forms
             exRange.Value2 = "Tổng tiền:";
             exRange = exSheet.Cells[cot + 1][hang + 14];
             exRange.Font.Bold = true;
-            exRange.Value2 = txttongtien.Text;
+            exRange.Value2 = txttongtien.Text; //.value, .Text
             exRange = exSheet.Cells[1][hang + 15]; //Ô A1 
 
 
@@ -200,7 +207,8 @@ namespace nhom5_qlgiaythethao.Forms
             exRange.Range["A1:C1"].MergeCells = true;
             exRange.Range["A1:C1"].Font.Italic = true;
             exRange.Range["A1:C1"].HorizontalAlignment = COMExel.XlHAlign.xlHAlignCenter;
-            DateTime d = Convert.ToDateTime(tblThongtinHD.Rows[0][1]);
+            DateTime d = Convert.ToDateTime(tblThongtinHD.Rows[0][1]);//
+            
             exRange.Range["A1:C1"].Value = "Hà Nội, ngày " + d.Day + " tháng " + d.Month + " năm " + d.Year;
             exRange.Range["A2:C2"].MergeCells = true;
             exRange.Range["A2:C2"].Font.Italic = true;
@@ -222,5 +230,20 @@ namespace nhom5_qlgiaythethao.Forms
             this.Close();
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (len < text.Length)
+            {
+                lblText.Text = lblText.Text + text.ElementAt(len);
+                len++;
+            }
+            else
+                timer1.Stop();
+        }
     }
 }

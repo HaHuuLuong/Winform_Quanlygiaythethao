@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupSp = new System.Windows.Forms.GroupBox();
             this.btntimkiem = new System.Windows.Forms.Button();
             this.cbomahoadonban = new System.Windows.Forms.ComboBox();
@@ -68,7 +69,8 @@
             this.cbomasinhvien = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblText = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupSp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.groupThongtinchung.SuspendLayout();
@@ -523,17 +525,23 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã hóa đơn bán";
             // 
-            // label1
+            // lblText
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Lavender;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(428, -11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 55);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Hóa đơn bán hàng";
+            this.lblText.AutoSize = true;
+            this.lblText.BackColor = System.Drawing.Color.Lavender;
+            this.lblText.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblText.Location = new System.Drawing.Point(428, -11);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(373, 55);
+            this.lblText.TabIndex = 3;
+            this.lblText.Text = "Hóa đơn bán hàng";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FrmHoaDonBan
             // 
@@ -542,7 +550,7 @@
             this.ClientSize = new System.Drawing.Size(1323, 761);
             this.Controls.Add(this.groupSp);
             this.Controls.Add(this.groupThongtinchung);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblText);
             this.Name = "FrmHoaDonBan";
             this.Text = "FrmHoaDonBan";
             this.Load += new System.EventHandler(this.FrmHoaDonBan_Load);
@@ -589,7 +597,7 @@
         private System.Windows.Forms.Label cbomasinhvien;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Button btnboqua;
         private System.Windows.Forms.Button btnsua;
         private System.Windows.Forms.Button btndong;
@@ -599,5 +607,6 @@
         private System.Windows.Forms.Button btntimkiem;
         private System.Windows.Forms.ComboBox cbomahoadonban;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Timer timer1;
     }
 }

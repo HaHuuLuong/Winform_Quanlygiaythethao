@@ -112,7 +112,13 @@ namespace nhom5_qlgiaythethao.Forms
                 btnhuy.Enabled = true;
             }
             Load_DataGridViewChitiet();
+            // Chạy animation Slogan
+            text = lblText.Text;
+            lblText.Text = "";
+            timer1.Start();
         }
+        private string text;
+        private int len = 0;
         private void Load_DataGridViewChitiet()
         {
             string sql;
@@ -125,12 +131,12 @@ namespace nhom5_qlgiaythethao.Forms
             DataGridView.Columns[3].HeaderText = "Giá bán";
             DataGridView.Columns[4].HeaderText = "Khuyến mại";
             DataGridView.Columns[5].HeaderText = "Thành tiền";
-            DataGridView.Columns[0].Width = 100;
-            DataGridView.Columns[1].Width = 100;
-            DataGridView.Columns[2].Width = 100;
-            DataGridView.Columns[3].Width = 100;
-            DataGridView.Columns[4].Width = 100;
-            DataGridView.Columns[5].Width = 100;
+            DataGridView.Columns[0].Width = 200;
+            DataGridView.Columns[1].Width = 200;
+            DataGridView.Columns[2].Width = 200;
+            DataGridView.Columns[3].Width = 200;
+            DataGridView.Columns[4].Width = 200;
+            DataGridView.Columns[5].Width = 200;
             DataGridView.AllowUserToAddRows = false;
             DataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
@@ -550,6 +556,17 @@ namespace nhom5_qlgiaythethao.Forms
         private void groupThongtinchung_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (len < text.Length)
+            {
+                lblText.Text = lblText.Text + text.ElementAt(len);
+                len++;
+            }
+            else
+                timer1.Stop();
         }
     }
     

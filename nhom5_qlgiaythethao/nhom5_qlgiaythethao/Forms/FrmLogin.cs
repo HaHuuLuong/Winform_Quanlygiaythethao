@@ -21,7 +21,14 @@ namespace nhom5_qlgiaythethao.Forms
         {
             txtTenDangNhap.Text = Properties.Settings.Default.TenDangNhap;
             txtMatKhau.Text = Properties.Settings.Default.MatKhau;
+            // Chạy animation Slogan
+            text = lblText.Text;
+            lblText.Text = "";
+            timer1.Start();
         }
+        private string text;
+        private int len = 0;
+        
         public void DangNhap()
         {
             string user = "We Run";
@@ -86,6 +93,17 @@ namespace nhom5_qlgiaythethao.Forms
                 txtMatKhau.PasswordChar = '\0';
             else
                 txtMatKhau.PasswordChar = '*';
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(len < text.Length)
+            {
+                lblText.Text = lblText.Text + text.ElementAt(len);
+                len++;
+            }    
+            else
+                timer1.Stop();
         }
     }
 }

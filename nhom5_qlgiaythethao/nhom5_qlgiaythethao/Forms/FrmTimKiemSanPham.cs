@@ -113,8 +113,13 @@ namespace nhom5_qlgiaythethao.Forms
             if (MessageBox.Show("Bạn có muốn hiển thị thông tin chi tiết?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 MaSp = dtgvTimsp.CurrentRow.Cells["MaSanPham"].Value.ToString();
+               // string 
                 FrmSanPham frm = new FrmSanPham();
                 frm.txtMasanpham.Text = MaSp;
+                string a;
+                a = "SELECT MaSanPham, TenSanPham, GiaNhap, GiaBan, SoLuong, HinhAnh, MaLoai, MaNuoc, MaChatLieu, MaMau FROM tblSanPham where MaSanPham=N'" + frm.txtMasanpham.Text + "' ";
+                frm.sql = a;
+                
                 frm.StartPosition = FormStartPosition.CenterScreen;
                 frm.ShowDialog();
             }

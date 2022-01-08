@@ -38,10 +38,12 @@ namespace nhom5_qlgiaythethao.Forms
             buttonopen.Enabled = false;
             Load_DataGridView();
         }
+        //
+       // string sql;
+        public string sql = "SELECT MaSanPham, TenSanPham, GiaNhap, GiaBan, SoLuong, HinhAnh, MaLoai, MaNuoc, MaChatLieu, MaMau FROM tblSanPham ";
         private void Load_DataGridView()
         {
-            string sql;
-            sql = "SELECT MaSanPham, TenSanPham, GiaNhap, GiaBan, SoLuong, HinhAnh, MaLoai, MaNuoc, MaChatLieu, MaMau FROM tblSanPham  ";//where MaSanPham=N'" + txtMasanpham.Text + "'
+             //where MaSanPham=N'" + txtMasanpham.Text + "' 
             tblsp = Class.Functions.GetDataToTable(sql);
             dtgvsp.DataSource = tblsp;
             dtgvsp.Columns[0].HeaderText = "Mã sản phẩm";

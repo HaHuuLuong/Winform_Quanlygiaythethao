@@ -96,7 +96,7 @@ namespace nhom5_qlgiaythethao.Class
 
          public static bool IsDate(string d)
          {
-             string[] parts = d.Split('/');
+             string[] parts = d.Split('/');//Shorttime
              if ((Convert.ToInt32(parts[0]) >= 1) && (Convert.ToInt32(parts[0]) <= 31) && (Convert.ToInt32(parts[1]) >= 1) && (Convert.ToInt32(parts[1]) <= 12) && (Convert.ToInt32(parts[2]) >= 1900))
                  return true;
              else
@@ -154,7 +154,7 @@ namespace nhom5_qlgiaythethao.Class
              string[] mNumText;
              //Xóa các dấu "," nếu có
              sNumber = sNumber.Replace(",", "");
-             mNumText = "không;một;hai;ba;bốn;năm;sáu;bảy;tám;chín".Split(';');
+             mNumText = "không;một;hai;ba;bốn;năm;sáu;bảy;tám;chín".Split(';'); //[không;một]
              mLen = sNumber.Length - 1; // trừ 1 vì thứ tự đi từ 0
              for (int i = 0; i <= mLen; i++)
              {

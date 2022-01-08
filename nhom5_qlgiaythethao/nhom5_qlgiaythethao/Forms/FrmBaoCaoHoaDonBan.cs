@@ -42,6 +42,15 @@ namespace nhom5_qlgiaythethao.Forms
             dgnhaphang.Columns[5].HeaderText = "NGÀY BÁN";
             dgnhaphang.Columns[6].HeaderText = "MÃ NHÂN VIÊN BAN";
             dgnhaphang.Columns[7].HeaderText = "MÃ KHÁCH HÀNG";
+            dgnhaphang.Columns[0].Width = 200;
+            dgnhaphang.Columns[1].Width = 200;
+            dgnhaphang.Columns[2].Width = 200;
+            dgnhaphang.Columns[3].Width = 200;
+            dgnhaphang.Columns[4].Width = 200;
+            dgnhaphang.Columns[5].Width = 200;
+            dgnhaphang.Columns[6].Width = 200;
+            dgnhaphang.Columns[7].Width = 200;
+            
 
             dgnhaphang.AllowUserToAddRows = false;
             dgnhaphang.EditMode = DataGridViewEditMode.EditProgrammatically;

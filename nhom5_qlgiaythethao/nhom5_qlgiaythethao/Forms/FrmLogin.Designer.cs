@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.btnlogin = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
@@ -38,7 +39,11 @@
             this.btnSave = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.lblText = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -141,7 +146,7 @@
             this.panel1.Controls.Add(this.btnlogin);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btncancel);
-            this.panel1.Location = new System.Drawing.Point(181, 195);
+            this.panel1.Location = new System.Drawing.Point(161, 227);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(606, 374);
             this.panel1.TabIndex = 16;
@@ -159,6 +164,33 @@
             this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // lblText
+            // 
+            this.lblText.AutoSize = true;
+            this.lblText.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblText.Location = new System.Drawing.Point(18, 9);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(550, 32);
+            this.lblText.TabIndex = 17;
+            this.lblText.Text = "We Run - Shop giày thể thao uy tín, chất lượng";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel2.Controls.Add(this.lblText);
+            this.panel2.Location = new System.Drawing.Point(171, 160);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(586, 50);
+            this.panel2.TabIndex = 18;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -166,6 +198,7 @@
             this.BackgroundImage = global::nhom5_qlgiaythethao.Properties.Resources.Thêm_tiêu_đề_phụ__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(967, 613);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Name = "FrmLogin";
@@ -173,6 +206,8 @@
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -189,5 +224,8 @@
         private System.Windows.Forms.CheckBox btnSave;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label lblText;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
